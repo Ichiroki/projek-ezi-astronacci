@@ -15,6 +15,7 @@ module.exports = {
         'dark-8' : '#1e293b',
         'dark-7' : '#334155',
         'white' : '#f1f5f9',
+        'hitam' : '#191C21'
       },
 
       screen : {
