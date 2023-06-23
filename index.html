@@ -10,9 +10,19 @@
     <!-- Bootstrap Icon -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Project Landing Page</title>
     <style>
         /* Banner */
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+
         .banner {
           background: url('img/image3.png'), linear-gradient(90deg, #191C21 45.31%, rgba(25, 28, 33, 0.713444) 70.43%, rgba(25, 28, 33, 0.627185) 86.94%, rgba(25, 28, 33, 0) 100%);
           background-size: cover;
@@ -56,20 +66,11 @@
         .section-card ~ div:hover {
             background-color: #fde047;
         }
-
-        .msg-card:hover {
-            background-color: #f4f4f5;
-            box-shadow: 0 0 
-        }
-
-        .msg-card:hover > p {
-            color: #fde047;
-        }
       </style>
       
 </head>
 
-<d class="antialiased">
+<body class="antialiased">
     <!-- Banner -->
 
         <div id="banner" class="banner">
@@ -110,17 +111,17 @@
         <div class="bg-sec-1 absolute w-full h-96 z-[-10]">
         </div>
         <h2 class="text-6xl text-center pt-28 text-zinc-100 lg:text-4xl">Pernahkah Kamu Merasa..</h2>
-        <div class="flex flex-col lg:flex-row container space-y-5 lg:space-y-0 mt-7 lg:items-center justify-center items-center lg:h-96">
-            <div class="card flex lg:basis-1/3 pt-6 justify-center relative shadow-md shadow-zinc-900">
-                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-8 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300">
+        <div class="flex flex-col lg:flex-row container space-y-5 lg:space-y-0 mt-7 lg:items-center justify-center lg:h-96">
+            <div class="card flex lg:basis-1/3 pt-6 justify-center relative lg:h-[12rem]">
+                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-8 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300 shadow-md ">
                             Sudah <span class="font-bold">jago analisis</span> teknikal, tapi hasil masih <span class="font-bold">belum optimal</span>.
                         </div>
                         <div class="card-img absolute bottom-[-36px] border-8 border-zinc-100 rounded-full p-2 bg-zinc-100">
                             <img src="img/money1.png" alt="" width="50">
                         </div>
             </div>
-            <div class="card flex lg:basis-1/3 pt-6 justify-center relative shadow-md shadow-zinc-900">
-                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-8 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300">
+            <div class="card flex lg:basis-1/3 pt-6 justify-center relative lg:h-[12rem]">
+                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-8 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300 shadow-md">
                             <span class="font-bold">Bingung</span> untuk menentukan titik
                             <span class="font-bold">TP & SL</span> yang akurat.
                         </div>
@@ -128,8 +129,8 @@
                             <img src="img/confused1.png" alt="" width="50">
                         </div>
             </div>
-            <div class="card flex lg:basis-1/3 pt-6 justify-center relative shadow-md shadow-zinc-900">
-                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-8 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300">
+            <div class="card flex lg:basis-1/3 pt-6 justify-center relative lg:h-[12rem]">
+                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-10 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300 shadow-md">
                             <span class="font-bold">Tidak tahu waktu</span> tepat untuk <span class="font-bold">entry</span>
                             di market.
                         </div>
@@ -138,8 +139,8 @@
                         </div>
             </div>
         </div>
-        <div class="msg-card w-7/12 lg:w-3/5 font-bold my-16 text-3xl bg-yellow-300 text-center p-6 container hover:bg-zinc-100 shadow-lg">
-            <p>Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci & Time Trading</span>
+        <div class="msg-card w-7/12 lg:w-3/5 font-bold my-16 text-3xl bg-yellow-300 text-center p-6 container shadow-md hover:ring-4 ring-zinc-300 transition-all">
+            <p class="">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci & Time Trading</span>
             </p>
         </div>
     </div>
@@ -147,23 +148,147 @@
 
     <!-- Section 2 -->
 
-    <div class="flex container w-full">
-        <div class="">
-            <div class="w-full relative bottom-0 left-0 z-50">
-                <div class="absolute">
-                    <img src="img/img1.png" alt="">
-                </div>
-                <div class="relative">
-                    <img src="img/img2.png" alt="" class="z-10 absolute  right-[-8rem]">
-                </div>
-                    <img src="img/img3.png" alt="" width="350" class="absolute">
+    <!-- <div class="flex flex-col container w-full relative items-center justify-center lg:flex-row">
+        <div class="Group408" style="width: 23.75rem; height: 20.668rem; position: relative ">
+            <img class="Rectangle4" style="width: 248.15px; height: 330.69px; left: 0px; top: 0px; position: absolute; border-radius: 10.72px" src="img/img1.png" />
+            <div class="Group457" style="width: 15.5095rem;
+            height: 301.75px; left: 152.21px; top: 14.47px; position: absolute">
+              <img class="Rectangle5" style="width: 15.5095rem
+              ; height: 151.68px; left: 0px; top: 150.07px; position: absolute; border-radius: 10.72px" src="img/img3.png" />
+              <img class="Polygon1" style="width: 124.34px; height: 142.57px; left: 103.44px; top: 0px; position: absolute; border-radius: 4.29px" src="img/img2.png" />
             </div>
+          </div>
+        <div class="my-6 w-[24rem] text-center">
+            <p class="text-5xl">
+                Solusi Belajar Ilmu Astronacci dengan Mudah
+            </p>
         </div>
-        <div></div>
     </div>
+    
+    <div class="Group476 my-6 mx-auto w-full flex justify-between items-center">
+        <div class="Frame5 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex">
+          <div class="bi bi-check w-[18px] h-[18px]"></div>
+          <div class="MateriTersusunSecaraLengkapTerstruktur w-[300px]">
+            <span class="text-zinc-900 text-[1.25rem] font-bold tracking-wide">Materi </span>tersusun secara
+            <span class="text-zinc-900 text-[20px] font-bold tracking-wide">lengkap & terstruktur.</span>
+        </div>
+        </div>
+        <div class="Frame6 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex">
+          <div class="bi bi-check w-[18px] h-[18px]"></div>
+          <div class="PembahasanTeoriTerperinciMudahDipahami w-[295px]">
+            <span class="text-zinc-900 text-[20px] font-bold tracking-wide">Pembahasan</span> teori
+            <span class="text-zinc-900 text-[20px] font-bold tracking-wide">terperinci & mudah</span> dipahami.</span>
+        </div>
+        </div>
+        <div class="Frame7 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex">
+          <div class="bi bi-check w-[18px] h-[18px]"></div>
+          <div class="PraktikPenerapanIlmuDiBerbagaiMarket w-[298px]"><span class="text-zinc-900 text-[20px] font-bold tracking-wide">Praktik</span> penerapan ilmu di
+            <span class="text-zinc-900 text-[20px] font-bold tracking-wide">berbagai market.</span>
+        </div>
+        </div>
+    </div> -->
 
     <!-- End of Section 2 -->
+
+    <!-- Section 3 -->
+
+    <div class="w-full h-screen pt-10 lg:p-16 bg-zinc-100 flex flex-col items-center lg:flex-row">
+        <div class="w-4/5 lg:w-1/2 py-10">
+            <h1 class="font-bold text-4xl">The Art Of Fibonacci Platinum Edition</h1>
+            <p class="my-3 text-2xl">E-learning best seller Astronacci Shop dengan <span class="font-bold">12 JURUS AMPUH</span> ini siap bantu kamu ciptakan strategi analisis market AKURAT dengan hasil yang <span class="font-bold">LEBIH OPTIMAL</span>. Kamu akan belajar langsung dari <span class="font-bold">MASTERNYA</span> dengan ilmu yang telah terbukti <span clss="font-bold">KREDIBEL</span>.</p>
+        </div>
+        <div class="w-4/5 lg:w-1/2 py-10 flex justify-center items-center">
+            <img src="img/ads.png" alt="">
+        </div>
+    </div>
+
+    <!-- End of Section 3 -->
+
+    <!-- Section 4 -->
+
+    <div class="py-10 container h-screen flex flex-col lg:flex-row">
+        <div class="flex items-center justify-center lg:w-1/2">
+            <img src="img/MOCKUP FIBONACCI PLATIUM EDITION 2.png" alt="" width="450">
+        </div>
+        <div class="p-5 lg:w-1/2">
+            <h1 class="font-bold text-4xl">Dapatkan ILMU LENGKAP Hanya dalam Satu E-learning!</h1>
+            <div class="py-4">
+                <div class="card mb-6 cursor-pointer" id="accordion-1" onclick="accTrigger('accordion-1', 'accordion-item-1')">
+                    <button class="flex items-center justify-between p-6 gap-4 rounded-lg bg-zinc-100 hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
+                        <div class="">
+                            <img src="img/search1.png" alt="">
+                        </div>
+                        <div class="text-lg mx-auto">Teknik Mengungkap <i class="font-bold">Support & Resistance</i> Tersembunyi.</div>
+                        <div class="">
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-item hidden bg-yellow-300 mt-[-0.75rem] flex justify-center" id="accordion-item-1">
+                        <div class="accordion-content w-9/12 pb-2 text-lg">
+                            <p>Penerapan Fibonacci Retracement dapat membantumu menemukan titik Support & Resistance yang tak terlihat sekalipun.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-6 cursor-pointer" id="accordion-2" onclick="accTrigger('accordion-2', 'accordion-item-2')">
+                    <button class="flex items-center justify-between p-6 gap-4 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all">
+                        <div class="">
+                            <img src="img/analytics1.png" alt="">
+                        </div>
+                        <div class="text-lg mx-auto">Metode Tepat Menentukan Titik <span class="font-bold">TP & SL</span> di <span class="font-bold">best area</span>.</div>
+                        <div class="">
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-item hidden bg-yellow-300 mt-[-0.75rem] flex justify-center" id="accordion-item-2">
+                        <div class="accordion-content w-9/12 pb-2 text-lg">
+                            <p>Menentukan titik TP & SL secara akurat jadi lebih mudah menggunakan Fibonacci Retracement & Fibonacci Extension.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cursor-pointer" id="accordion-3" onclick="accTrigger('accordion-3', 'accordion-item-3')">
+                    <button class="flex items-center justify-between p-6 gap-4 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all">
+                        <div class="">
+                            <img src="img/alarm-clock1.png" alt="">
+                        </div>
+                        <div class="text-lg"><span class="font-bold">BUY</span> di Harga Terendah & <span class="font-bold">SELL</span> di Harga Tertinggi.</div>
+                        <div class="">
+                            <i class="bi bi-chevron-down"></i>
+                        </div>
+                    </button>
+                    <div class="accordion-item hidden bg-yellow-300 mt-[-0.75rem] flex justify-center" id="accordion-item-3">
+                        <div class="accordion-content w-9/12 pb-2 text-lg">
+                            <p>Fibonacci & Time Trading wajib kamu terapkan untuk bisa konfirmasi harga serta waktu yang tepat saat ambil keputusan di market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="bg-yellow-300 text-lg p-6 w-full rounded-full hover:bg-merah hover:text-zinc-100 hover:ring-4 hover:ring-yellow-300 transition-all">Saya Tertarik Belajar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- End of Section 4 -->
     <script src="js/script.js"></script>
+
+    <!-- My Scripts -->
+    <script>
+        // Accordion
+
+        
+        function accTrigger(accTrigger, accItem) {
+            const trigger = document.getElementById(accTrigger);
+            const item = document.getElementById(accItem);
+
+            trigger.addEventListener('click', function() {
+                item.classList.toggle('hidden');
+            })
+
+            // if(trigger) {
+            //     console.log('Hello World');      
+            // }
+        }
+    </script>
 </body>
 
 </html>

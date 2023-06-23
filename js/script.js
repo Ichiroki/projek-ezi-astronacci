@@ -1,21 +1,14 @@
-// hamburger
-const hamburger = document.querySelector('#hamburger');
-const navMenu = document.querySelector('#nav-menu');
+// Accordion 
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('hamburger-active');
-    navMenu.classList.toggle('hidden');
-})
+function accTrigger(accTrigger, accItem) {
+    const trigger = document.getElementById(accTrigger);
+    const item = document.getElementById(accItem);
 
-// navbar fixed 
+    trigger.addEventListener('click', function() {
+        item.classList.toggle('hidden');
+    })
 
-window.onscroll = () => {
-    const header = document.querySelector('header');
-    const fixedNav = header.offsetTop;
-
-    if(window.pageYOffset > fixedNav) {
-        header.classList.add('navbar-fixed');
-    } else {
-        header.classList.remove('navbar-fixed');
-    }
+    // if(trigger) {
+    //     console.log('Hello World');      
+    // }
 }
