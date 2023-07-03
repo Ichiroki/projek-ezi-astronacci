@@ -4,6 +4,7 @@ Section Header:
 3. Color samakan (Sudah)
 4. Content header (Sudah)
 5. Link anchor (Sudah)
+6. Rotasi background image ketika user menggunakan device mobile (Sudah)
 
 Section ke-2
 1. Ukuran Font sesuaikan & Bold (Sudah)
