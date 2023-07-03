@@ -167,6 +167,11 @@
             background-color: #fde047;
         }
 
+        /* Section 4 */
+        .sec-4 .card {
+            width: 36.5rem;
+        }
+
         /* SplideJS */
         .splide__slide {
             width: 100%;
@@ -189,6 +194,10 @@
         }
 
         @media screen and (max-width: 1024px) {
+            .container-grid {
+                flex-direction: column;
+            }
+
             .banner {
                 background: url('img/image3-mobile.png');
                 background-size: cover;
@@ -247,14 +256,13 @@
         <div class="bg-sec-1 absolute w-full h-96 z-[-10]">
         </div>
         <h2 class="text-6xl text-center pt-28 text-zinc-100 lg:text-4xl">Pernahkah Kamu Merasa..</h2>
-        <div class="flex flex-col lg:flex-row container space-y-5 lg:space-y-0 mt-7 lg:items-center justify-center lg:h-96">
-            <div class="container-grid">
-                <div class="card">
+        <div class="flex flex-col lg:flex-row container mt-7 items-center justify-center lg:h-96">
+                <div class="card mr-5 mb-6 xl:mb-0">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
-                      <p>
-                        lorem ipsum dolor sit amet...
+                      <p class="xl:text-2xl text-center p-4">
+                        Sudah <span class="font-bold">jago analisis</span> teknikal, tapi hasil <br>masih <span class="font-bold">belum optimal</span>.
                        </p>
                     </div>
                     <div class="card-border"></div>
@@ -263,12 +271,12 @@
                     <img src="img/money1.png" class="card-logo-img">
                   </div>
                 </div>
-                <div class="card">
+                <div class="card mb-6 xl:mb-0">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
-                      <p>
-                        lorem ipsum dolor sit amet...
+                      <p class="xl:text-2xl text-center">
+                        <span class="font-bold">Bingung</span> untuk menentukan titik <span class="font-bold">TP & SL</span> yang akurat.
                        </p>
                     </div>
                     <div class="card-border"></div>
@@ -277,12 +285,12 @@
                     <img src="img/confused1.png" class="card-logo-img">
                   </div>
                 </div>
-                <div class="card">
+                <div class="card ml-5">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
-                      <p>
-                        lorem ipsum dolor sit amet...
+                      <p class="xl:text-2xl text-center">
+                        <span class="font-bold">Tidak tahu waktu</span> tepat untuk entry di <span class="font-bold">market</span>.
                        </p>
                     </div>
                     <div class="card-border"></div>
@@ -291,7 +299,6 @@
                     <img src="img/timer1.png" class="card-logo-img">
                   </div>
                 </div>
-              </div>
         </div>
         <div class="msg-card w-7/12 lg:w-3/5 font-bold my-16 text-3xl bg-yellow-300 text-center p-6 container shadow-md hover:ring-4 ring-zinc-300 transition-all">
             <p class="">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci & Time Trading</span>
@@ -361,7 +368,7 @@
 
     <!-- Section 4 -->
 
-    <section class="py-10 container h-screen flex flex-col items-center lg:flex-row relative">
+    <section class="sec-4 py-10 container h-screen flex flex-col items-center lg:flex-row relative">
         <div class="flex items-center justify-center lg:w-1/2">
             <img src="img/MOCKUP FIBONACCI PLATIUM EDITION 2.png" alt="" width="450">
         </div>
@@ -372,7 +379,7 @@
             </h1>
             <div class="py-4">
                 <div class="card mb-6 cursor-pointer" id="accordion-1" onclick="accTrigger('accordion-1', 'accordion-item-1')">
-                    <button class="flex items-center justify-between p-6 gap-4 rounded-lg bg-zinc-100 hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all w-full">
+                    <button class="flex items-center justify-between p-6 gap-2 rounded-lg bg-zinc-100 hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all w-full">
                         <div class="">
                             <img src="img/search1.png" alt="">
                         </div>
@@ -388,7 +395,7 @@
                     </div>
                 </div>
                 <div class="card mb-6 cursor-pointer" id="accordion-2" onclick="accTrigger('accordion-2', 'accordion-item-2')">
-                    <button class="flex items-center justify-between p-6 gap-4 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all w-full">
+                    <button class="flex items-center justify-between p-6 gap-2 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all w-full">
                         <div class="">
                             <img src="img/analytics1.png" alt="">
                         </div>
@@ -404,7 +411,7 @@
                     </div>
                 </div>
                 <div class="card cursor-pointer" id="accordion-3" onclick="accTrigger('accordion-3', 'accordion-item-3')">
-                    <button class="flex items-center justify-between p-6 gap-4 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all w-full">
+                    <button class=" flex items-center justify-between p-6 gap-2 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all w-full">
                         <div class="">
                             <img src="img/alarm-clock1.png" alt="">
                         </div>
@@ -430,12 +437,12 @@
 
     <!-- Section 5 -->
 
-    <section class="container overflow-hidden my-20 xl:mt-12 pt-80 xl:pt-0 xl:h-screen w-11/12 h-fit px-2">      
-        <div class="bg-yellow-300 rounded-[2.5rem] overflow-hidden relative flex flex-col lg:flex-row gap-6 lg:h-4/6">
+    <section class="container overflow-hidden mb-7 mt-80 xl:mb-5 xl:mt-12 xl:pt-0 xl:h-screen w-11/12 h-fit px-2">      
+        <div class="bg-yellow-300 rounded-[2.5rem] overflow-hidden relative flex flex-col lg:flex-row gap-6 lg:h-4/6 xl:h-[28.5rem]">
             <div class="lg:w-3/6 lg:relative flex items-center p-8">
                 <div class="bg-yellow-300">
-                    <h1 class="text-3xl font-bold text-left lg:text-right hidden xl:block">Entry di Harga Terbaik dengan Momentum yang Tepat</h1>
-                    <h1 class="text-4xl font-bold text-left lg:text-right xl:hidden">
+                    <h1 class="text-4xl font-bold text-left lg:text-right hidden xl:block">Entry di Harga Terbaik dengan Momentum yang Tepat</h1>
+                    <h1 class="text-5xl font-bold text-left lg:text-right xl:hidden">
                     Entry di Harga <br>Terbaik dengan <br>Momentum yang <br>Tepat</h1>
                     <p class="text-left lg:text-right mt-6 text-xl">
                         <span>Deret bilangan <span class="font-bold">Fibonacci</span> menyimpan rahasia kesuksesan dalam menciptakan analisis akurat.</span><br>
