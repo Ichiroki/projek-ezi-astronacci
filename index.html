@@ -38,9 +38,103 @@
           height: 100vh;
         }
 
-        /* .video-link > i {
-            transition: all .3s;
-        } */
+        .container-grid {
+        gap: 2rem;
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        }
+
+        .card {
+        position: relative;
+            
+        width: fit-content;
+        }
+
+        .card-body {
+        background: #f4f4f4;
+        
+        position: relative;
+        
+        border-radius: 1.25rem;
+        overflow: hidden;
+        
+        width: fit-content;
+        height: 230px;
+        }
+
+        .card-body img {
+        scale: 0;
+        
+        transition: 1s ease-in-out;
+        }
+
+        .card-body:hover img {
+        scale: 1;
+        }
+
+        .card-body::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        background: #FFD540E5;
+        height: .5rem;
+        width: 100%;
+        opacity: .5;
+        
+        transition: 1s ease-in-out;
+        }
+
+        .card-body:hover::after {
+        height: 100%;
+        }
+
+        .card-paragraph {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        height: 100%;
+        width: 100%;
+        
+        font-size: 1.2rem;
+        }
+
+        .card-logo {
+        position: absolute;
+        
+        bottom: -2.25rem;
+        right: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        }
+
+        .card-logo-img {
+        border: .5rem solid white;
+        padding: .50rem;
+        border-radius: 50%;
+        background-color: #f4f4f4;
+        }
+
+        .card-body ~ .card-logo > .card-logo-img {
+        transition: 1s ease-in-out;
+        }
+
+        .card-body:hover ~ .card-logo > .card-logo-img {
+        background-color: #FFD540E5;
+        }
 
         .video-link:hover > i {
             background-color: #334155;
@@ -101,8 +195,12 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
+   
+            .Group408 {
+                margin-top: -19rem;
+            }
         }
-      </style>
+    </style>
       
 </head>
 
@@ -150,32 +248,50 @@
         </div>
         <h2 class="text-6xl text-center pt-28 text-zinc-100 lg:text-4xl">Pernahkah Kamu Merasa..</h2>
         <div class="flex flex-col lg:flex-row container space-y-5 lg:space-y-0 mt-7 lg:items-center justify-center lg:h-96">
-            <div class="card flex lg:basis-1/3 pt-6 justify-center relative lg:h-[12rem]">
-                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-8 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300 shadow-md ">
-                            Sudah <span class="font-bold">jago analisis</span> teknikal, tapi hasil masih <span class="font-bold">belum optimal</span>.
-                        </div>
-                        <div class="card-img absolute bottom-[-36px] border-8 border-zinc-100 rounded-full p-2 bg-zinc-100">
-                            <img src="img/money1.png" alt="" width="50">
-                        </div>
-            </div>
-            <div class="card flex lg:basis-1/3 pt-6 justify-center relative lg:h-[12rem]">
-                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-8 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300 shadow-md">
-                            <span class="font-bold">Bingung</span> untuk menentukan titik
-                            <span class="font-bold">TP & SL</span> yang akurat.
-                        </div>
-                        <div class="absolute bottom-[-36px] border-8 border-zinc-100 rounded-full p-2 bg-zinc-100">
-                            <img src="img/confused1.png" alt="" width="50">
-                        </div>
-            </div>
-            <div class="card flex lg:basis-1/3 pt-6 justify-center relative lg:h-[12rem]">
-                        <div class="w-2/3 section-card leading-relaxed py-20 text-center px-8 lg:p-10 bg-zinc-100 text-zinc-900 text-3xl rounded-xl lg:text-lg border-b-8 border-yellow-300 shadow-md">
-                            <span class="font-bold">Tidak tahu waktu</span> tepat untuk <span class="font-bold">entry</span>
-                            di market.
-                        </div>
-                        <div class="absolute bottom-[-36px] border-8 border-zinc-100 rounded-full p-2 bg-zinc-100">
-                            <img src="img/money1.png" alt="" width="50">
-                        </div>
-            </div>
+            <div class="container-grid">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rectangle13.png">
+                    <div class="card-paragraph">
+                      <p>
+                        lorem ipsum dolor sit amet...
+                       </p>
+                    </div>
+                    <div class="card-border"></div>
+                  </div>
+                  <div class="card-logo">
+                    <img src="img/money1.png" class="card-logo-img">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rectangle13.png">
+                    <div class="card-paragraph">
+                      <p>
+                        lorem ipsum dolor sit amet...
+                       </p>
+                    </div>
+                    <div class="card-border"></div>
+                  </div>
+                  <div class="card-logo">
+                    <img src="img/confused1.png" class="card-logo-img">
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/rectangle13.png">
+                    <div class="card-paragraph">
+                      <p>
+                        lorem ipsum dolor sit amet...
+                       </p>
+                    </div>
+                    <div class="card-border"></div>
+                  </div>
+                  <div class="card-logo">
+                    <img src="img/timer1.png" class="card-logo-img">
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="msg-card w-7/12 lg:w-3/5 font-bold my-16 text-3xl bg-yellow-300 text-center p-6 container shadow-md hover:ring-4 ring-zinc-300 transition-all">
             <p class="">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci & Time Trading</span>
@@ -186,7 +302,7 @@
 
     <!-- Section 2 -->
 
-    <section class="flex flex-col container w-full relative items-center justify-center lg:justify-evenly lg:flex-row h-screen">
+    <section class="flex flex-col container w-full relative items-center justify-center lg:justify-evenly lg:flex-row h-screen xl:mt-0 mt-72 ">
         <div class="Group408" style="width: 23.75rem; height: 20.668rem; position: relative">
             <img class="Rectangle4" style="width: 248.15px; height: 330.69px; left: 0px; top: 0px; position: absolute; border-radius: 10.72px" src="img/img1.png" />
             <div class="Group457" style="width: 15.5095rem;
