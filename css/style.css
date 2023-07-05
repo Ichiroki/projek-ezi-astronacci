@@ -853,6 +853,10 @@ video {
   width: 24.5rem;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1210,6 +1214,22 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1441,6 +1461,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
