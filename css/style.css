@@ -717,10 +717,6 @@ video {
   margin-bottom: 3rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .mr-10 {
   margin-right: 2.5rem;
 }
@@ -1106,11 +1102,6 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1134,11 +1125,6 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 
 .pt-7 {
@@ -1189,9 +1175,9 @@ video {
   text-align: center;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-4xl {
@@ -1223,6 +1209,11 @@ video {
   font-size: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1235,16 +1226,6 @@ video {
 
 .text-\[2\.2rem\] {
   font-size: 2.2rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .font-normal {
@@ -1445,10 +1426,6 @@ video {
     display: none;
   }
 
-  .md\:p-4 {
-    padding: 1rem;
-  }
-
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
@@ -1477,36 +1454,16 @@ video {
     margin-left: 3rem;
   }
 
-  .lg\:mt-9 {
-    margin-top: 2.25rem;
-  }
-
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .lg\:mt-20 {
-    margin-top: 5rem;
+  .lg\:mt-40 {
+    margin-top: 10rem;
   }
 
   .lg\:mt-48 {
     margin-top: 12rem;
   }
 
-  .lg\:mt-72 {
-    margin-top: 18rem;
-  }
-
-  .lg\:mt-96 {
-    margin-top: 24rem;
-  }
-
-  .lg\:mt-40 {
-    margin-top: 10rem;
-  }
-
-  .lg\:mt-52 {
-    margin-top: 13rem;
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -1801,10 +1758,6 @@ video {
     padding-bottom: 0.5rem;
   }
 
-  .xl\:pt-24 {
-    padding-top: 6rem;
-  }
-
   .xl\:pl-20 {
     padding-left: 5rem;
   }
@@ -1817,16 +1770,8 @@ video {
     padding-top: 5rem;
   }
 
-  .xl\:pt-36 {
-    padding-top: 9rem;
-  }
-
-  .xl\:pt-48 {
-    padding-top: 12rem;
-  }
-
-  .xl\:text-5xl {
-    font-size: 3rem;
+  .xl\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 
@@ -1843,11 +1788,6 @@ video {
   .xl\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
 
