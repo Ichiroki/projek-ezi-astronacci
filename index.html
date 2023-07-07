@@ -71,6 +71,9 @@
             scale: 0;
             
             transition: 1s ease-in-out;
+
+            display: block;
+            width: 100%;
         }
 
         .card-body:hover img {
@@ -234,18 +237,9 @@
             /* flex-direction: column; */
         }
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (min-width: 1024px) {
             .container-grid {
                 flex-direction: column;
-            }
-
-            .banner {
-                background: url('img/image3-mobile.png');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
-
-                height: fit-content;
             }
    
             .Group408 {
@@ -332,6 +326,8 @@
         @media screen and (max-width: 640px) {
             .banner {
                 height: 100vh;
+
+                background-image: url('img/image3-mobile.png')
             }
 
             /* Banner */
@@ -440,37 +436,123 @@
 
             }
 
-            @media screen and (max-width: 768px) {    
+            @media screen and (min-width: 768px) {    
             
             /* Banner */
 
-            .banner {
-                height: 100vh;
+                .banner {
+                    height: 100vh;
+
+                }
+
+                .banner .banner-sm-text {
+                    /* margin-top: 3rem; */
+                    padding: .5rem 0;
+                    font-size: .9rem;
+                    width: 19rem;
+                }
+
+                .banner .banner-lg-text {
+                    font-size: 2.3rem;
+                }
+
+                .banner .banner-md-text {
+                    font-size: 2rem;
+                }
+
+                .banner .banner-pelajari-btn {
+                    width: 19rem;
+                }
+                
+                .banner .banner-download-wrapper {
+                    margin-top: 8rem;
+                }
             }
 
-            .banner .banner-sm-text {
-                /* margin-top: 3rem; */
-                padding: .5rem 0;
-                font-size: .9rem;
-                width: 19rem;
-            }
+            @media screen and (min-width: 1280px) { 
+                .sec-2-card-wrapper {
+                    max-width: 100%;
+                }
 
-            .banner .banner-lg-text {
-                font-size: 2.3rem;
-            }
+                .Group408 {
+                    margin-top: -19rem;
+                }
 
-            .banner .banner-md-text {
-                font-size: 2rem;
-            }
+                .Rectangle4 {
+                    display: block;
 
-            .banner .banner-pelajari-btn {
-                width: 19rem;
-            }
-            
-            .banner .banner-download-wrapper {
-                margin-top: 8rem;
-            }
-            }
+                    width: 23rem; 
+                    height: 28rem; 
+
+                    position: absolute; 
+                    left: 2rem; 
+                    top: -3rem; 
+
+                    border-radius: 10.72px;
+                }
+
+                .Group457 {
+                    width: 25rem;
+                    height: 22rem; 
+
+                    position: absolute;
+
+                    left: 152.21px; 
+                    top: 14.47px; 
+                }
+
+                .Group457 .Rectangle5 {
+                    width: 9rem; 
+                    height: 6rem; 
+
+                    position: absolute; 
+                    left: 3rem; 
+                    top: 4rem; 
+
+                    border-radius: 10.72px;
+                }
+
+                .Group457 .Polygon1 {
+                    width: 6rem; 
+                    height: 7rem; 
+                    left: 6rem; 
+                    top: -3.5rem; 
+                    position: absolute; 
+                    border-radius: 4.29px;
+                }
+
+                .Group476 {
+                    max-width: 50%;
+                }
+
+                .Group476 .Frame5,
+                .Group476 .Frame6,
+                .Group476 .Frame7,
+                .Group476 .Frame8 {
+                    width: 22rem;
+                }
+
+                /* Section 3 */
+
+                .sec-3 .sec-3-title {
+                    font-size: 2rem;
+                }
+                
+                /* Section 4 */
+
+                .sec-4 .sec-4-title {
+                    font-size: 1.5rem;
+                }
+
+                /* Section 6 */
+
+                .sec-6 .sec-6-btn {
+                    width: 90%;
+                    margin: 2rem auto;
+                    padding: 1rem 1rem;
+
+                }
+             }
         }
     </style>
       
@@ -484,19 +566,19 @@
                 <a href="#" class="block mx-auto w-fit lg:mx-16 pt-7">
                     <img src="img/logo-AShop-putih.png" alt="" style="width: 100px;">
                 </a>
-                <div class="px-7 lg:w-5/6 lg:ml-12 xl:py-28 pt-9">
-                    <h1 class="banner-sm-text xl:px-6 py-1 border border-[#FFD540] rounded-full text-[#FFD540] xl:w-fit w-8/12 text-center font-normal sm:text-sm text-xs md:text-lg lg:w-7/12">The Art Of Fibonacci Platinum Edition</h1>
-                    <p class="uppercase text-slate-50 pt-4 text-4xl xl:text-6xl font-semibold w-9/12 xl:w-full hidden md:block md:text-6xl md:w-full xl:block lg:hidden">RAHASIA ANALISIS MARKET MAKIN AKURAT</p>
+                <div class="px-7 lg:w-5/6 lg:ml-12 xl:pb-28 xl:pt-48 pt-9">
+                    <h1 class="banner-sm-text py-1 text-xs border border-[#FFD540] rounded-full text-[#FFD540] w-8/12 text-center font-normal sm:text-sm md:w-7/12 md:text-lg lg:w-7/12 xl:w-fit xl:px-6">The Art Of Fibonacci Platinum Edition</h1>
+                    <p class="uppercase text-slate-50 pt-4 text-4xl font-semibold w-9/12 xl:w-full hidden md:block md:text-6xl md:w-full lg:hidden xl:block xl:text-7xl">RAHASIA ANALISIS MARKET MAKIN AKURAT</p>
                     <p class="banner-lg-text block text-white text-5xl sm:text-base font-bold mt-3 md:hidden lg:block lg:text-7xl xl:hidden">RAHASIA ANALISIS <br>MARKET MAKIN<br> AKURAT</p>
-                    <p class="text-slate-50 text-5xl pt-3 hidden xl:block">Hasil Jauh Lebih Optimal!</p>
+                    <p class="text-slate-50 text-5xl pt-3 hidden xl:text-[4.3rem] xl:block">Hasil Jauh Lebih Optimal!</p>
                     <p class="banner-md-text text-slate-50 text-5xl pt-3 xl:hidden md:text-[3.5rem]">Hasil Jauh Lebih <br>Optimal!</p>
-                    <div class="flex flex-col xl:flex-row lg:flex-row lg:items-center space-x-0 xl:space-x-8 items-start xl:items-center mt-6">
-                        <a href="#sec-3" type="button" class="banner-pelajari-btn block text-center bg-[#FFD540] rounded-lg hover:text-slate-50 hover:bg-[#DC3545] md:w-8/12 xl:py-[1rem] xl:px-[3.850rem] py-[1.5rem] transition-colors duration-150 w-[24rem] xl:w-fit lg:w-6/12">Pelajari Selengkapnya</a>
-                        <a href="#" class="video-link flex items-center text-slate-50 pt-5 md:pt-8 lg:mt-0 lg:pl-8 xl:mt-0 lg:flex-row">
+                    <div class="flex flex-col xl:flex-row lg:flex-row lg:items-center lg:p-0 space-x-0 xl:space-x-8 items-start xl:items-center mt-6">
+                        <a href="#sec-3" type="button" class="banner-pelajari-btn block text-center bg-[#FFD540] rounded-lg hover:text-slate-50 hover:bg-[#DC3545] md:w-8/12 xl:py-[1rem] xl:px-[3.850rem] py-[1.5rem] transition-colors duration-150 w-[24rem] lg:w-6/12 xl:w-[22rem]">Pelajari Selengkapnya</a>
+                        <a href="#" class="video-link flex items-center text-slate-50 pt-5 md:pt-8 lg:mt-0 lg:pl-8 xl:pt-0 xl:pl-0 lg:flex-row">
                             <i class="bi bi-play text-slate-50 xl:text-4xl border-2 border-slate-50 rounded-full px-4 py-3 xl:px-3 xl:py-2 transition duration-150 text-2xl"></i><span class="ml-4">Tonton Cuplikan <br>e-learning disini</span>
                         </a>
                     </div>
-                    <div class="banner-download-wrapper py-14 lg:mt-12 lg:flex lg:items-end xl:container xl:-ml-4 xl:mt-32">
+                    <div class="banner-download-wrapper py-14 lg:mt-12 lg:flex lg:items-end xl:container xl:-ml-4 xl:mt-52">
                         <div>
                             <h1 class="text-slate-50 text-base">Download A-Shop App Sekarang :</h1>
                             <div class="flex gap-2 xl:gap-7 banner-download">
@@ -517,13 +599,13 @@
 
     <!-- Section 1 -->
 
-    <section class="sec-1 relative flex flex-col items-center">
+    <section class="sec-1 relative flex flex-col items-center lg:h-screen">
         <div class="bg-sec-1 absolute w-full h-96 z-[-10]">
         </div>
         <h2 class="text-3xl text-center pt-28 text-zinc-100 lg:text-4xl font-bold hidden lg:block">Pernahkah Kamu Merasa..</h2>
         <h2 class="text-4xl text-center pt-28 text-zinc-100 lg:text-4xl font-bold lg:hidden">Pernahkah Kamu <br>Merasa..</h2>
         <div class="sec-1-card-wrapper flex flex-col lg:flex-row container mt-7 items-center justify-center lg:h-96 gap-6 xl:gap-0">
-                <div class="card xl:mr-5 mb-6 xl:mb-0">
+                <div class="card xl:mr-5 lg:mb-6 xl:mb-0">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
@@ -537,7 +619,7 @@
                     <img src="img/money1.png" class="card-logo-img">
                   </div>
                 </div>
-                <div class="card mb-6 xl:mb-0">
+                <div class="card lg:mb-6 xl:mb-0">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
@@ -551,7 +633,7 @@
                     <img src="img/confused1.png" class="card-logo-img">
                   </div>
                 </div>
-                <div class="card xl:ml-5 xl:-mt-3">
+                <div class="card xl:ml-5 lg:mt-0">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
@@ -566,9 +648,9 @@
                   </div>
                 </div>
         </div>
-        <div class="msg-card w-8/12 xl:w-6/12 font-bold mb-16 mt-24 xl:text-lg bg-[#FFD540] text-center p-6 container shadow-md hover:ring-4 ring-zinc-300 transition-all">
+        <div class="msg-card w-11/12 xl:w-6/12 font-bold mb-16 mt-24 xl:text-lg bg-[#FFD540] text-center p-6 container shadow-md hover:ring-4 ring-zinc-300 transition-all">
             <p class="xl:block hidden">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci & Time Trading</span>
-            <p class="xl:hidden block">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci <br>& Time Trading</span>
+            <p class="xl:hidden block text-2xl">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci <br>& Time Trading</span>
             </p>
         </div>
     </section>
@@ -577,48 +659,47 @@
 
     <!-- Section 2 -->
 
-    <section class="flex flex-col container w-full relative items-center justify-center lg:justify-evenly lg:flex-row h-screen xl:mt-0 mt-72">
-        <div class="Group408 xl:-mt-16" style="width: 23.75rem; height: 20.668rem; position: relative">
-            <img class="Rectangle4" src="img/img1.png" />
-            <div class="Group457">
-              <img class="Rectangle5" src="img/img3.png" />
-              <img class="Polygon1" src="img/img2.png" />
-            </div>
-          </div>
+    <section class="flex flex-col container w-full relative items-center justify-center lg:justify-evenly lg:flex-row h-screen xl:mt-0 mt-28 md:mt-72">
+        <div>
+            <img class="block mb-12" src="img/sec-2-img.png" alt="" width="600">
+        </div>
           <!-- mt-[24rem] -->
-        <div class="sec-2-card-wrapper xl:pl-20 pb-12 lg:mt-0 xl:mt-0 xl:pt-0 xl:w-[33rem] w-[27rem]">
+        <div class="sec-2-card-wrapper xl:pl-20 pb-12 lg:pb-40 lg:-mt-52 xl:mt-0 xl:pt-0 xl:w-[33rem] w-[27rem] md:w-[33rem]">
             <h1 class="text-3xl font-bold xl:block hidden xl:-ml-10 relative">
                 Solusi Belajar Ilmu Astronacci <br>dengan Mudah
                 <img src="img/path30.png" alt="" class="absolute left-[6.5rem] hidden lg:block" style="width: 140px;">
                 <img src="img/path30.png" alt="" class="absolute top-8 right-7 hidden lg:block" style="width: 260px;">
             </h1>
-            <h1 class="text-4xl font-bold xl:hidden block">
+            <h1 class="text-5xl font-bold xl:hidden block">
                 Solusi Belajar Ilmu Astronacci dengan <br>Mudah
             </h1>
                 
-    <section class="Group476 mb-6 mx-auto w-full flex flex-col gap-6 lg:gap-0 justify-evenly items-center">
-        <div class="Frame5 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex my-4">
-          <div class="bi bi-check w-[18px] h-[18px]"></div>
-          <div class="MateriTersusunSecaraLengkapTerstruktur w-[22rem] xl:w-[28rem]">
-            <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Materi </span>tersusun secara
-            <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">lengkap & terstruktur.</span>
-        </div>
-        </div>
-        <div class="Frame6 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex mb-4">
-          <div class="bi bi-check w-[18px] h-[18px]"></div>
-          <div class="PembahasanTeoriTerperinciMudahDipahami w-[22rem] xl:w-[28rem]">
-            <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Pembahasan</span> teori
-            <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">terperinci & mudah</span> dipahami.</span>
-        </div>
-        </div>
-        <div class="Frame7 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex">
-          <div class="bi bi-check w-[18px] h-[18px]"></div>
-          <div class="PraktikPenerapanIlmuDiBerbagaiMarket w-[22rem] xl:w-[28rem]">
-            <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Praktik</span> penerapan ilmu di
-            <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">berbagai market.</span>
-        </div>
-        </div>
-    </section>
+            <section class="Group476 mb-6 mx-auto w-full flex flex-col gap-3 lg:gap-0 justify-evenly items-center">
+                <div class="Frame5 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex my-4 md:w-full">
+                <div class="bi bi-check w-[18px] h-[18px]"></div>
+                <div class="MateriTersusunSecaraLengkapTerstruktur w-[22rem] xl:w-[28rem]">
+                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Materi </span>tersusun secara
+                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">lengkap & terstruktur.</span>
+                </div>
+                </div>
+                <div class="Frame6 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex mb-4 md:w-full">
+                <div class="bi bi-check w-[18px] h-[18px]"></div>
+                <div class="PembahasanTeoriTerperinciMudahDipahami w-[22rem] xl:w-[28rem]">
+                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Pembahasan</span> teori
+                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">terperinci & mudah</span> dipahami.</span>
+                </div>
+                </div>
+                <div class="Frame7 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex md:w-full">
+                <div class="bi bi-check w-[18px] h-[18px]"></div>
+                    <div class="PraktikPenerapanIlmuDiBerbagaiMarket w-[22rem] xl:w-[28rem]">
+                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Praktik</span> penerapan ilmu di
+                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">berbagai market.</span>
+                    </div>
+                </div>
+                <div class="Frame8 mb-28 md:mb-64">
+                    <a href="#sec-3" type="button" class="block text-center bg-[#FFD540] rounded-full w-[22rem] py-5 transition-all hover:text-slate-50 hover:bg-merah hover:ring-4">Ingin Belajar Lebih Lanjut!</a>
+                </div>
+            </section>
         </div>
     </section>
 
