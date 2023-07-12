@@ -22,20 +22,3 @@ Section 5
 2. Title deskripsi samakan (Sudah)
 3. Sub title bukan center melaikan rata kiri
 4. Button bukan full colom, melaikan 50% (Sudah)
-
-Section 6
-1. Style banner sesuaikan
-2. Rounded banckgroud
-3. Title Header & deskripsi sesuai ukuran
-
-Section 7
-1. Cari rekomendasi or template lain untuk carousel
-2. Tidak boleh menggunakan table, bisa menggunakan grid (Sudah)
-
-Section 8
-1. Carousel belum ada
-2. sesuaikan kembali layout figma
-
-Footer
-1. Logo kominfo dan deskripsi rata kiri
-2. padding atau margin top untuk sosmed
