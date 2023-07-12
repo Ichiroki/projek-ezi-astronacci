@@ -19,8 +19,8 @@ module.exports = {
         'merah' : '#DC3545'
       },
 
-      screen : {
-        '2xl' : '1320px'
+      screens : {
+        '3xl' : '2560px',
       }
     },
   },

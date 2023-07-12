@@ -61,7 +61,7 @@
             
             position: relative;
             
-            border-radius: 1.25rem;
+            border-radius: 0.625rem;
             overflow: hidden;
             
             width: 16rem;
@@ -94,27 +94,27 @@
         }
 
         .card-body:hover::after {
-        height: 100%;
+            height: 100%;
         }
 
         .card-paragraph {
-        position: absolute;
-        top: -1rem;
-        left: 0;
-        z-index: 10;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        height: 100%;
-        width: 100%;
+            position: absolute;
+            top: -1rem;
+            left: 0;
+            z-index: 10;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            height: 100%;
+            width: 100%;
         }
 
         .card-logo {
         position: absolute;
         
-        bottom: -2.25rem;
+        bottom: -3.5rem;
         right: 0;
 
         display: flex;
@@ -125,8 +125,9 @@
         }
 
         .card-logo-img {
-        border: .5rem solid white;
-        padding: .50rem;
+        border: 1rem solid white;
+        padding: 1rem;
+        object-fit: fill;
         border-radius: 50%;
         background-color: #f4f4f4;
         }
@@ -169,51 +170,12 @@
             background-color: #fde047;
         }
 
-        /* Section 2 */
-        .Rectangle4 {
-            width: 22rem; 
-            height: 26rem; 
-
-            position: absolute; 
-            left: -7rem; 
-            top: -3rem; 
-
-            border-radius: 10.72px;
-        }
-
-        .Group457 {
-            width: 20rem;
-            height: 19rem; 
-
-            position: absolute;
-
-            left: 152.21px; 
-            top: 14.47px; 
-        }
-
-        .Group457 .Rectangle5 {
-            width: 17rem; 
-            height: 11rem; 
-
-            position: absolute; 
-            left: 0px; 
-            top: 150.07px; 
-
-            border-radius: 10.72px;
-        }
-
-        .Group457 .Polygon1 {
-            width: 10rem; 
-            height: 12rem; 
-            left: 103.44px; 
-            top: -3.5rem; 
-            position: absolute; 
-            border-radius: 4.29px
-        }
-
         /* Section 4 */
-        .sec-4 .card {
-            width: 44.5rem;
+
+        .panel {
+            border-bottom: 0.625rem;
+            display: none;
+            overflow: hidden;
         }
 
         /* SplideJS */
@@ -241,51 +203,6 @@
             .container-grid {
                 flex-direction: column;
             }
-   
-            .Group408 {
-                margin-top: -19rem;
-            }
-
-            .Rectangle4 {
-                width: 17rem; 
-                height: 20rem; 
-
-                position: absolute; 
-                left: -1.5rem; 
-                top: -3rem; 
-
-                border-radius: 10.72px;
-            }
-
-            .Group457 {
-                width: 20rem;
-                height: 19rem; 
-
-                position: absolute;
-
-                left: 152.21px; 
-                top: 14.47px; 
-            }
-
-            .Group457 .Rectangle5 {
-                width: 13rem; 
-                height: 8rem; 
-
-                position: absolute; 
-                left: 1rem; 
-                top: 7rem; 
-
-                border-radius: 10.72px;
-            }
-
-            .Group457 .Polygon1 {
-                width: 7rem; 
-                height: 9rem; 
-                left: 103.44px; 
-                top: -3.5rem; 
-                position: absolute; 
-                border-radius: 4.29px
-            }
 
             .banner-download > img:first-child {
                 width: 95px;
@@ -296,18 +213,16 @@
             }
 
             .sec-1 .card-body {
-                width: 23rem;
+                width: 18rem;
             }
 
             .sec-1 .card-paragraph {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
 
             .bg-sec-1 {
                 background: url('img/artboard-mobile.png');
                 background-size: cover;
-
-                height: 36rem;
             }
 
             .card-logo > .card-logo-img {
@@ -317,114 +232,41 @@
             .sec-4 .card {
                 width: 100%;
             }
-
-            .sec-5 {
-                margin-top: 28rem;
-            }
         }
 
         @media screen and (max-width: 640px) {
+            .sec-1 .card .card-paragraph {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .sec-1 h2 {
+                padding-top: 1rem;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
             .banner {
                 height: 100vh;
 
-                background-image: url('img/image3-mobile.png')
+                background-image: url('img/image3-mobile.png');
+                background-position: center top;
             }
+            /* Section 1 */
 
-            /* Banner */
-            .banner .banner-sm-text {
-                /* margin-top: 3rem; */
-                padding: .5rem 0;
-                font-size: .9rem;
-                width: 19rem;
-            }
-
-            .banner .banner-lg-text {
-                font-size: 2.3rem;
-            }
-
-            .banner .banner-md-text {
-                font-size: 2rem;
-            }
-
-            .banner .banner-pelajari-btn {
-                width: 19rem;
-            }
-            
-            .banner .banner-download-wrapper {
-                margin-top: 8rem;
-            }
-
-            /* Section 2 */
-
-            .sec-2-card-wrapper {
-                max-width: 100%;
-            }
-
-            .Group408 {
-                margin-top: -19rem;
-            }
-
-            .Rectangle4 {
-                width: 13rem; 
-                height: 16rem; 
-
-                position: absolute; 
-                left: 2rem; 
-                top: -3rem; 
-
-                border-radius: 10.72px;
-            }
-
-            .Group457 {
-                width: 20rem;
-                height: 19rem; 
-
-                position: absolute;
-
-                left: 152.21px; 
-                top: 14.47px; 
-            }
-
-            .Group457 .Rectangle5 {
-                width: 9rem; 
-                height: 6rem; 
-
-                position: absolute; 
-                left: 3rem; 
-                top: 4rem; 
-
-                border-radius: 10.72px;
-            }
-
-            .Group457 .Polygon1 {
-                width: 6rem; 
-                height: 7rem; 
-                left: 6rem; 
-                top: -3.5rem; 
-                position: absolute; 
-                border-radius: 4.29px;
-            }
-
-            .Group476 {
-                max-width: 50%;
-            }
-
-            .Group476 .Frame5,
-            .Group476 .Frame6,
-            .Group476 .Frame7 {
-                width: 22rem;
-            }
-
-            /* Section 3 */
-
-            .sec-3 .sec-3-title {
-                font-size: 2rem;
+            .card-paragraph {
+                font-size: 1.5rem;
             }
             
             /* Section 4 */
 
             .sec-4 .sec-4-title {
                 font-size: 1.5rem;
+            }
+
+            .sec-4 .card {
+                width: 24rem;
             }
 
             /* Section 6 */
@@ -456,69 +298,16 @@
                     font-size: 2.3rem;
                 }
 
-                .banner .banner-md-text {
-                    font-size: 2rem;
-                }
-
-                .banner .banner-pelajari-btn {
-                    width: 19rem;
-                }
-                
-                .banner .banner-download-wrapper {
-                    margin-top: 8rem;
+            /* Section 2 */
+            
+                .card-body {
+                    width: 21rem;
                 }
             }
 
             @media screen and (min-width: 1280px) { 
                 .sec-2-card-wrapper {
                     max-width: 100%;
-                }
-
-                .Group408 {
-                    margin-top: -19rem;
-                }
-
-                .Rectangle4 {
-                    display: block;
-
-                    width: 23rem; 
-                    height: 28rem; 
-
-                    position: absolute; 
-                    left: 2rem; 
-                    top: -3rem; 
-
-                    border-radius: 10.72px;
-                }
-
-                .Group457 {
-                    width: 25rem;
-                    height: 22rem; 
-
-                    position: absolute;
-
-                    left: 152.21px; 
-                    top: 14.47px; 
-                }
-
-                .Group457 .Rectangle5 {
-                    width: 9rem; 
-                    height: 6rem; 
-
-                    position: absolute; 
-                    left: 3rem; 
-                    top: 4rem; 
-
-                    border-radius: 10.72px;
-                }
-
-                .Group457 .Polygon1 {
-                    width: 6rem; 
-                    height: 7rem; 
-                    left: 6rem; 
-                    top: -3.5rem; 
-                    position: absolute; 
-                    border-radius: 4.29px;
                 }
 
                 .Group476 {
@@ -532,12 +321,6 @@
                     width: 22rem;
                 }
 
-                /* Section 3 */
-
-                .sec-3 .sec-3-title {
-                    font-size: 2rem;
-                }
-                
                 /* Section 4 */
 
                 .sec-4 .sec-4-title {
@@ -563,21 +346,21 @@
 
     <div id="banner" class="banner xl:px-12">
             <div class="xl:container xl:h-screen lg:h-screen">
-                <a href="#" class="block mx-auto w-fit lg:mx-16 pt-7">
+                <a href="#" class="block mx-auto w-fit lg:mx-16 pt-16">
                     <img src="img/logo-AShop-putih.png" alt="" style="width: 100px;">
                 </a>
-                <div class="px-7 lg:w-5/6 lg:ml-12 xl:pb-28 xl:pt-48 pt-9">
-                    <h1 class="banner-sm-text py-1 text-xs border border-[#FFD540] rounded-full text-[#FFD540] w-8/12 text-center font-normal sm:text-sm md:w-7/12 md:text-lg lg:w-7/12 xl:w-fit xl:px-6">The Art Of Fibonacci Platinum Edition</h1>
-                    <p class="uppercase text-slate-50 pt-4 text-4xl font-bold md:text-6xl xl:text-7xl">RAHASIA ANALISIS MARKET MAKIN AKURAT</p>
+                <div class="px-7 lg:w-5/6 lg:ml-12 lg:mt-20 xl:pb-28 xl:mt-24 pt-9 2xl:mt-48 3xl:mt-12">
+                    <h1 class="text-xs w-60 py-1 border border-[#FFD540] rounded-full text-[#FFD540] text-center font-normal sm:text-sm md:w-7/12 md:text-lg lg:w-7/12 xl:w-fit xl:px-6">The Art Of Fibonacci Platinum Edition</h1>
+                    <p class="uppercase text-slate-50 pt-4 text-3xl font-bold md:text-6xl xl:text-7xl">RAHASIA ANALISIS MARKET MAKIN AKURAT</p>
                     <p class="text-slate-50 text-5xl pt-3 hidden xl:text-[4.3rem] xl:block">Hasil Jauh Lebih Optimal!</p>
-                    <p class="banner-md-text text-slate-50 text-5xl pt-3 xl:hidden md:text-[3.5rem]">Hasil Jauh Lebih <br>Optimal!</p>
-                    <div class="flex flex-col xl:flex-row lg:flex-row lg:items-center lg:p-0 space-x-0 xl:space-x-8 items-start xl:items-center mt-6">
-                        <a href="#sec-3" type="button" class="banner-pelajari-btn block text-center bg-[#FFD540] rounded-lg hover:text-slate-50 hover:bg-[#DC3545] md:w-8/12 xl:py-[1rem] xl:px-[3.850rem] py-[1.5rem] transition-colors duration-150 w-[24rem] lg:w-6/12 xl:w-[22rem]">Pelajari Selengkapnya</a>
-                        <a href="#" class="video-link flex items-center text-slate-50 pt-5 md:pt-8 lg:mt-0 lg:pl-8 xl:pt-0 xl:pl-0 lg:flex-row">
+                    <p class="text-slate-50 text-2xl md:text-5xl pt-3 xl:hidden md:text-[3rem]">Hasil Jauh Lebih <br>Optimal!</p>
+                    <div class="flex flex-col md:gap-3 xl:flex-row md:flex-row md:items-center lg:p-0 space-x-0 xl:space-x-8 items-start xl:items-center mt-6">
+                        <a href="#sec-3" type="button" class="banner-pelajari-btn block text-center bg-[#FFD540] rounded-lg hover:text-slate-50 hover:bg-[#DC3545] w-10/12 md:w-6/12 xl:py-[1rem] xl:px-[3.850rem] py-[1.5rem] transition-colors duration-150 lg:w-6/12 xl:w-[22rem]">Pelajari Selengkapnya</a>
+                        <a href="#" class="video-link flex items-center text-slate-50 pt-5 md:pt-0 lg:pt-0 lg:pl-8 xl:pl-0 lg:flex-row">
                             <i class="bi bi-play text-slate-50 xl:text-4xl border-2 border-slate-50 rounded-full px-4 py-3 xl:px-3 xl:py-2 transition duration-150 text-2xl"></i><span class="ml-4">Tonton Cuplikan <br>e-learning disini</span>
                         </a>
                     </div>
-                    <div class="banner-download-wrapper py-14 lg:mt-10 lg:flex lg:items-end xl:container xl:-ml-4 xl:mt-52">
+                    <div class="mt-44 md:mt-32 lg:flex lg:mt-20 xl:mt-28 lg:items-end xl:container xl:-ml-4 2xl:mt-40 3xl:mt-0">
                         <div>
                             <h1 class="text-slate-50 text-base">Download A-Shop App Sekarang :</h1>
                             <div class="flex gap-2 xl:gap-7 banner-download">
@@ -599,12 +382,12 @@
     <!-- Section 1 -->
 
     <section class="sec-1 relative flex flex-col items-center lg:h-screen">
-        <div class="bg-sec-1 absolute w-full h-96 z-[-10]">
+        <div class="bg-sec-1 absolute w-full h-[32rem] md:h-[38rem] lg:h-96 z-[-10]">
         </div>
         <h2 class="text-3xl text-center pt-28 text-zinc-100 lg:text-4xl font-bold hidden lg:block">Pernahkah Kamu Merasa..</h2>
-        <h2 class="text-4xl text-center pt-28 text-zinc-100 lg:text-4xl font-bold lg:hidden">Pernahkah Kamu <br>Merasa..</h2>
-        <div class="sec-1-card-wrapper flex flex-col lg:flex-row container mt-7 items-center justify-center lg:h-96 gap-6 xl:gap-0">
-                <div class="card xl:mr-5 lg:mb-6 xl:mb-0">
+        <h2 class="text-4xl text-center pt-12 text-zinc-100 lg:text-4xl font-bold lg:hidden">Pernahkah Kamu <br>Merasa..</h2>
+        <div class="flex flex-col lg:flex-row container mt-7 items-center justify-center lg:h-96 gap-6 xl:gap-0">
+                <div class="card mb-12 lg:mb-0">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
@@ -618,7 +401,7 @@
                     <img src="img/money1.png" class="card-logo-img">
                   </div>
                 </div>
-                <div class="card lg:mb-6 xl:mb-0">
+                <div class="card mb-12 lg:mb-0">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
@@ -632,7 +415,7 @@
                     <img src="img/confused1.png" class="card-logo-img">
                   </div>
                 </div>
-                <div class="card xl:ml-5 lg:mt-0">
+                <div class="card">
                   <div class="card-body">
                     <img src="img/rectangle13.png">
                     <div class="card-paragraph">
@@ -647,9 +430,8 @@
                   </div>
                 </div>
         </div>
-        <div class="msg-card w-11/12 xl:w-6/12 font-bold mb-16 mt-24 xl:text-lg bg-[#FFD540] text-center p-6 container shadow-md hover:ring-4 ring-zinc-300 transition-all">
-            <p class="xl:block hidden">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci & Time Trading</span>
-            <p class="xl:hidden block text-2xl">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci <br>& Time Trading</span>
+        <div class="msg-card w-11/12 lg:w-9/12 xl:w-6/12 font-bold mb-16 mt-24 xl:text-lg bg-[#FFD540] text-center p-6 container shadow-md hover:ring-4 ring-zinc-300 transition-all">
+            <p class="text-2xl lg:text-xl">Tandanya Kamu Butuh Bantuan Ilmu <span class="italic">Fibonacci & Time Trading</span>
             </p>
         </div>
     </section>
@@ -658,45 +440,44 @@
 
     <!-- Section 2 -->
 
-    <section class="flex flex-col container w-full relative items-center justify-center lg:justify-evenly lg:flex-row h-screen xl:mt-0 mt-28 md:mt-72">
-        <div>
-            <img class="block mb-12" src="img/sec-2-img.png" alt="" width="600">
+    <section class="flex flex-col container relative justify-center items-center lg:justify-between lg:flex-row h-screen lg:p-14">
+        <div class="pt-0 md:pt-36 lg:pt-0">
+            <img class="block lg:w-[26rem] md:w-[28rem]" src="img/sec-2-img.png" alt="">
         </div>
-          <!-- mt-[24rem] -->
-        <div class="sec-2-card-wrapper xl:pl-20 pb-12 lg:pb-40 lg:-mt-52 xl:mt-0 xl:pt-0 xl:w-[33rem] w-[27rem] md:w-[33rem]">
-            <h1 class="text-3xl font-bold xl:block hidden xl:-ml-10 relative">
+        <div class="container min-w-fit xl:w-[33rem] lg:w-[30rem] pt-12">
+            <h1 class="text-2xl md:text-3xl font-bold lg:block hidden relative">
                 Solusi Belajar Ilmu Astronacci <br>dengan Mudah
                 <img src="img/path30.png" alt="" class="absolute left-[6.5rem] hidden lg:block" style="width: 140px;">
-                <img src="img/path30.png" alt="" class="absolute top-8 right-7 hidden lg:block" style="width: 260px;">
+                <img src="img/path30.png" alt="" class="absolute top-8 right-5 hidden lg:block" style="width: 260px;">
             </h1>
-            <h1 class="text-5xl font-bold xl:hidden block">
-                Solusi Belajar Ilmu Astronacci dengan <br>Mudah
+            <h1 class="text-3xl font-bold lg:hidden block relative">
+                Solusi Belajar Ilmu Astronacci dengan Mudah
+                <img src="img/path30.png" alt="" class="absolute left-[6.5rem] hidden lg:block" style="width: 140px;">
+                <img src="img/path30.png" alt="" class="absolute top-8 -right-2 hidden lg:block" style="width: 260px;">
             </h1>
                 
-            <section class="Group476 mb-6 mx-auto w-full flex flex-col gap-3 lg:gap-0 justify-evenly items-center">
-                <div class="Frame5 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex my-4 md:w-full">
-                <div class="bi bi-check w-[18px] h-[18px]"></div>
-                <div class="MateriTersusunSecaraLengkapTerstruktur w-[22rem] xl:w-[28rem]">
-                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Materi </span>tersusun secara
-                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">lengkap & terstruktur.</span>
-                </div>
-                </div>
-                <div class="Frame6 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex mb-4 md:w-full">
-                <div class="bi bi-check w-[18px] h-[18px]"></div>
-                <div class="PembahasanTeoriTerperinciMudahDipahami w-[22rem] xl:w-[28rem]">
-                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Pembahasan</span> teori
-                    <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">terperinci & mudah</span> dipahami.</span>
-                </div>
-                </div>
-                <div class="Frame7 px-[21px] py-[20px] bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex md:w-full">
-                <div class="bi bi-check w-[18px] h-[18px]"></div>
-                    <div class="PraktikPenerapanIlmuDiBerbagaiMarket w-[22rem] xl:w-[28rem]">
-                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Praktik</span> penerapan ilmu di
-                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">berbagai market.</span>
+            <section class="mx-auto w-full flex flex-col gap-2 lg:gap-0 justify-evenly items-center">
+                <div class="py-5 px-3 min-w-full bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex mt-4 sm:w-96 md:w-full mb-2">
+                <div class="bi bi-check"></div>
+                    <div class="text-sm">
+                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Materi </span>tersusun secara
+                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">lengkap & terstruktur.</span>
                     </div>
                 </div>
-                <div class="Frame8 mb-28 md:mb-64">
-                    <a href="#sec-3" type="button" class="block text-center bg-[#FFD540] rounded-full w-[22rem] py-5 transition-all hover:text-slate-50 hover:bg-merah hover:ring-4">Ingin Belajar Lebih Lanjut!</a>
+                <div class="py-5 px-3 min-w-full bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex sm:w-96 md:w-full mb-2">
+                <div class="bi bi-check"></div>
+                    <div class="text-sm">
+                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Pembahasan</span> teori <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">terperinci & mudah </span>dipahami.
+                    </div>
+                </div>
+                <div class="py-5 px-3 min-w-full bg-stone-300 hover:bg-yellow-300 bg-opacity-25 hover:ring-2 transition-all rounded-md justify-start items-center gap-[20px] inline-flex sm:w-96 md:w-full mb-2">
+                <div class="bi bi-check"></div>
+                    <div class="text-sm">
+                        <span class="text-zinc-900 text-[1rem] font-bold tracking-wide">Praktik penerapan ilmu di berbagai market.
+                    </div>
+                </div>
+                <div class="flex">
+                    <a href="#sec-3" type="button" class="inline px-9 text-sm min-w-full text-center bg-[#FFD540] rounded-full mt-6 py-5 transition-all hover:text-slate-50 hover:bg-merah hover:ring-4 md:block">Ingin Belajar Lebih Lanjut!</a>
                 </div>
             </section>
         </div>
@@ -707,10 +488,10 @@
 
     <!-- Section 3 -->
 
-    <section class="sec-3 w-full py-10 lg:p-16 bg-zinc-100 flex flex-col items-center lg:flex-row lg:h-screen" id="sec-3">
+    <section class="sec-3 h-screen w-full mt-14 py-10 lg:p-16 bg-zinc-100 flex flex-col justify-center items-center lg:flex-row lg:h-screen" id="sec-3">
         <div class="w-4/5 lg:w-1/2">
-            <h1 class=" sec-3-title font-bold text-6xl">The Art Of Fibonacci <br>Platinum Edition</h1>
-            <p class="my-3">E-learning best seller Astronacci Shop dengan <span class="font-bold">12 JURUS AMPUH</span> ini siap bantu kamu ciptakan strategi analisis market AKURAT dengan hasil yang <span class="font-bold">LEBIH OPTIMAL</span>. Kamu akan belajar langsung dari <span class="font-bold">MASTERNYA</span> dengan ilmu yang telah terbukti <span clss="font-bold">KREDIBEL</span>.</p>
+            <h1 class="font-bold xl:text-5xl md:text-4xl block text-2xl">The Art Of Fibonacci <br class="block md:hidden">Platinum Edition</h1>
+            <p class="block my-3 xl:text-lg text-sm w-11/12">E-learning best seller Astronacci Shop dengan <span class="font-bold">12 JURUS AMPUH</span> ini siap bantu kamu ciptakan strategi analisis market AKURAT dengan hasil yang <span class="font-bold">LEBIH OPTIMAL</span>. Kamu akan belajar langsung dari <span class="font-bold">MASTERNYA</span> dengan ilmu yang telah terbukti <span clss="font-bold">KREDIBEL</span>.</p>
         </div>
         <div class="w-4/5 lg:w-1/2 flex justify-center items-center">
             <iframe class="rounded-[2rem]" width="560" height="315" src="https://www.youtube.com/embed/ASihLdTch70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -721,67 +502,46 @@
 
     <!-- Section 4 -->
 
-    <section class="sec-4 py-10 container h-screen flex flex-col items-center lg:flex-row relative">
+    <section class="sec-4 container flex flex-col items-center lg:flex-row relative">
         <div class="flex items-center justify-center lg:w-1/2">
-            <img src="img/MOCKUP FIBONACCI PLATIUM EDITION 2.png" alt="" width="450">
+            <img src="img/MOCKUP FIBONACCI PLATIUM EDITION 2.png" alt="" class="block lg:w-[28rem]">
         </div>
-        <div class="p-5 lg:w-1/2">
-            <h1 class="text-4xl relative sec-4-title">Dapatkan <span class="font-bold">ILMU LENGKAP</span> Hanya dalam Satu <span class="font-bold">E-learning!</span>
-                <img src="img/path30.png" alt="" width="300" class="absolute top-[2.3rem] right-[8rem] hidden lg:block">
-                <img src="img/path30.png" alt="" width="200" class="absolute top-[5rem] right-[12rem] hidden lg:block">
+        <div class="lg:w-1/2 mt-4">
+            <h1 class="xl:text-5xl lg:text-3xl relative sec-4-title font-bold">Dapatkan ILMU LENGKAP Hanya dalam Satu E-learning!
+                <img src="img/path30.png" alt="" width="250" class="absolute top-[2rem] right-[6.3rem] hidden lg:block">
+                <img src="img/path30.png" alt="" width="230" class="absolute top-[4.5rem] right-[9.5rem] hidden lg:block">
             </h1>
-            <div class="py-4">
-                <div class="card mb-6 cursor-pointer" id="accordion-1" onclick="accTrigger('accordion-1', 'accordion-item-1')">
-                    <button class="flex items-center justify-between p-6 gap-2 rounded-lg bg-zinc-100 hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all w-full">
-                        <div class="">
-                            <img src="img/search1.png" alt="">
-                        </div>
-                        <div class="text-lg mx-auto">Teknik Mengungkap <i class="font-bold">Support & Resistance</i> Tersembunyi.</div>
-                        <div class="">
-                            <i class="bi bi-chevron-down"></i>
-                        </div>
-                    </button>
-                    <div class="accordion-item hidden bg-yellow-300 mt-[-0.75rem] flex justify-center text-center rounded-b-lg" id="accordion-item-1">
-                        <div class="accordion-content w-9/12 pb-2 text-lg">
-                            <p>Penerapan Fibonacci Retracement dapat membantumu menemukan titik Support & Resistance yang tak terlihat sekalipun.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-6 cursor-pointer" id="accordion-2" onclick="accTrigger('accordion-2', 'accordion-item-2')">
-                    <button class="flex items-center justify-between p-6 gap-2 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all w-full">
-                        <div class="">
-                            <img src="img/analytics1.png" alt="">
-                        </div>
-                        <div class="text-lg mx-auto">Metode Tepat Menentukan Titik <span class="font-bold">TP & SL</span> di <span class="font-bold">best area</span>.</div>
-                        <div class="">
-                            <i class="bi bi-chevron-down"></i>
-                        </div>
-                    </button>
-                    <div class="accordion-item hidden bg-yellow-300 mt-[-0.75rem] flex justify-center text-center rounded-b-lg" id="accordion-item-2">
-                        <div class="accordion-content w-9/12 pb-2 text-lg">
-                            <p>Menentukan titik TP & SL secara akurat jadi lebih mudah menggunakan Fibonacci Retracement & Fibonacci Extension.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card cursor-pointer" id="accordion-3" onclick="accTrigger('accordion-3', 'accordion-item-3')">
-                    <button class=" flex items-center justify-between p-6 gap-2 rounded-lg bg-zinc-100 hover:bg-yellow-300 transition-all w-full">
-                        <div class="">
-                            <img src="img/alarm-clock1.png" alt="">
-                        </div>
-                        <div class="text-lg"><span class="font-bold">BUY</span> di Harga Terendah & <span class="font-bold">SELL</span> di Harga Tertinggi.</div>
-                        <div class="">
-                            <i class="bi bi-chevron-down"></i>
-                        </div>
-                    </button>
-                    <div class="accordion-item hidden bg-yellow-300 mt-[-0.75rem] flex justify-center text-center rounded-b-lg" id="accordion-item-3">
-                        <div class="accordion-content w-9/12 pb-2 text-lg">
-                            <p>Fibonacci & Time Trading wajib kamu terapkan untuk bisa konfirmasi harga serta waktu yang tepat saat ambil keputusan di market.</p>
-                        </div>
-                    </div>
+            <div class="my-2">
+                <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
+                    <img src="img/search1.png" alt="" class="block pl-4">
+                    <p class="text-left md:text-base">Teknik Mengungkap Support & Resistance Tersembunyi.</p>
+                    <i class="bi bi-chevron-down block pr-4"></i>
+                </button>
+                <div class="panel p-6 bg-[#bdbdbd40]">
+                    <p>Penerapan Fibonacci Retracement dapat membantumu menemukan titik Support & Resistance yang tak terlihat sekalipun.</p>
                 </div>
             </div>
-            <div>
-                <button type="button" class="sec-4-btn bg-yellow-300 text-lg p-6 w-full rounded-full hover:bg-merah hover:text-zinc-100 hover:ring-4 hover:ring-yellow-300 transition-all">Saya Tertarik Belajar</button>
+            <div class="my-2">
+                <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
+                    <img src="img/analytics1.png" alt="" class="block pl-4">
+                    <p class="text-left md:text-base">Metode Tepat Menentukan Titik TP & SL di best area.</p>
+                    <i class="bi bi-chevron-down block pr-4"></i>
+                </button>
+                <div class="panel p-6 bg-[#bdbdbd40]">
+                    <p>Menentukan titik TP & SL secara akurat jadi lebih mudah menggunakan Fibonacci Retracement & Fibonacci Extension.</p>
+                </div>
+            </div>
+            <div class="my-2">
+                <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
+                    <img src="img/alarm-clock1.png" alt="" class="block pl-4">
+                    <p class="text-left md:text-base">BUY di Harga Terendah & SELL di Harga Tertinggi.</p>
+                    <i class="bi bi-chevron-down block pr-4"></i>
+                </button>
+                <div class="panel p-6 bg-[#bdbdbd40]">
+                    <p>Fibonacci & Time Trading wajib kamu terapkan untuk bisa konfirmasi harga serta waktu yang tepat saat ambil keputusan di market.</p>
+                </div>
+            </div>
+                <button type="button" class="bg-[#FFD540] font-bold text-lg px-6 py-4 w-full rounded-full hover:bg-merah hover:text-zinc-100 hover:ring-4 hover:ring-yellow-300 transition-all lg:w-1/2 lg:text-base">Saya Tertarik Belajar</button>
             </div>
         </div>
     </section>
@@ -790,22 +550,20 @@
 
     <!-- Section 5 -->
 
-    <section class="sec-5 container overflow-hidden mb-7 xl:mb-5 xl:mt-12 xl:pt-0 xl:h-screen w-11/12 h-fit px-2">      
-        <div class="bg-yellow-300 rounded-[2.5rem] overflow-hidden relative flex flex-col lg:flex-row gap-6 lg:h-4/6 xl:h-[28.5rem]">
-            <div class="lg:w-3/6 lg:relative flex items-center p-8">
-                <div class="bg-yellow-300">
-                    <h1 class="text-4xl font-bold text-left lg:text-right hidden xl:block">Entry di Harga Terbaik dengan Momentum yang Tepat</h1>
-                    <h1 class="text-5xl font-bold text-left lg:text-right xl:hidden">
-                    Entry di Harga <br>Terbaik dengan <br>Momentum yang <br>Tepat</h1>
-                    <p class="text-left lg:text-right mt-6 text-xl">
+    <section class="container px-4 py-8 mb-8 overflow-hidden md:scale-[.9] lg:px-0 xl:mb-5 xl:mt-12 xl:pt-0 lg:scale-90 xl:scale-100">      
+        <div class="bg-[#FFD540] rounded-2xl overflow-hidden relative flex flex-col lg:flex-row gap-6 lg:h-4/6 xl:h-[28.5rem]">
+            <div class="lg:w-6/12 lg:relative flex items-center px-8 py-20">
+                <div>
+                    <h1 class="text-3xl w-10/12 font-bold text-left md:text-4xl xl:text-[2.25rem] xl:leading-tight lg:text-right lg:w-full">Entry di Harga Terbaik dengan Momentum yang Tepat</h1>
+                    <p class="mt-6 text-left lg:text-right md:text-xl lg:text-lg">
                         <span>Deret bilangan <span class="font-bold">Fibonacci</span> menyimpan rahasia kesuksesan dalam menciptakan analisis akurat.</span><br>
                         Sedangkan <span class="font-bold">Time Trading</span> menjawab semua keraguan dalam menetapkan waktu bertransaksi.
                     </p>
                 </div>
             </div>
-            <div class="">
-                <div class="overflow-hidden lg:w-[18.75rem]">
-                    <img src="img/image57.png" alt="" class="hidden lg:block lg:absolute lg:top-0">
+            <div>
+                <div class="">
+                    <img src="img/image57.png" alt="" class="hidden h-full lg:block lg:absolute lg:top-0">
                     <img src="img/image57-mobile.png" class="block lg:hidden" alt="" style="width: 100%; margin-bottom: -1rem;">
                 </div>
             </div>
@@ -817,7 +575,7 @@
     <!-- Section 6 -->
 
     <section class="sec-6 bg-zinc-900 w-full pt-7 pb-12">
-        <div class="splide w-10/12 rounded-[.7rem] mx-auto mt-20" role="group">
+        <div class="splide w-10/12 rounded-[.7rem] mx-auto mt-20" role="group" id="splide">
             <div class="splide__track">
                 <ul class="splide__list rounded-xl">
                     <li class="splide__slide">
@@ -902,41 +660,59 @@
     <!-- Section 7 -->
 
     <section class="py-8 bg-[#F9FAFB]">
-        <div class="flex flex-col lg:flex-row p-8 gap-8">
-            <div class="relative md:ml-10">
-                <div class="p-4 w-fit border bg-yellow-200 rounded-full z-10">
-                    <img src="img/tandaKutipDua.png" alt="" class="">
+        <div class="slider overflow-hidden bg-[#FFF]">
+            <div class="slider-wrapper flex transition-transform duration-500 ease-in-out">
+              <div class="slide flex-shrink-0 w-full flex-col">
+                <div class="reviewer flex items-center p-5">
+                  <img src="reviewer1.jpg" alt="Reviewer 1" class="reviewer-image w-12 h-12 rounded-full mr-3">
+                  <div class="reviewer-info flex-1">
+                    <h3 class="reviewer-name text-xl mb-1">John Doe</h3>
+                    <p class="reviewer-message text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum aliquam augue ut pulvinar.</p>
+                  </div>
                 </div>
-                <div>
-                    <p class="text-5xl font-bold">Jadi seperti Mereka yang Trading-nya Terbantu</p>
+              </div>
+              <div class="slide flex-shrink-0 w-full">
+                <div class="reviewer flex items-center p-5">
+                  <img src="reviewer2.jpg" alt="Reviewer 2" class="reviewer-image w-12 h-12 rounded-full mr-3">
+                  <div class="reviewer-info flex-1">
+                    <h3 class="reviewer-name text-xl mb-1">Jane Smith</h3>
+                    <p class="reviewer-message text-sm text-gray-600">Vestibulum feugiat gravida malesuada. Curabitur pulvinar massa sed lacus vestibulum, sit amet faucibus metus interdum.</p>
+                  </div>
                 </div>
+              </div>
+              <div class="slide flex-shrink-0 w-full">
+                <div class="reviewer flex items-center p-5">
+                  <img src="reviewer3.jpg" alt="Reviewer 3" class="reviewer-image w-12 h-12 rounded-full mr-3">
+                  <div class="reviewer-info flex-1">
+                    <h3 class="reviewer-name text-xl mb-1">Mike Johnson</h3>
+                    <p class="reviewer-message text-sm text-gray-600">Fusce tempor tortor ut arcu mattis, a fringilla nisi iaculis. Nunc cursus turpis ac ex ullamcorper laoreet.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="rounded-lg p-7 bg-[#FFFFFF] shadow-2xl border md:mr-10 md:w-6/6 lg:w-5/6 flex flex-col lg:flex-col-reverse">
-                <div class="flex flex-col lg:flex-row lg:items-end lg:pt-5 lg:gap-6">
-                    <div>
-                        <img src="img/reviewer1.png" alt="">
-                    </div>
-                    <div>
-                        <h1 class="font-bold text-[#494E54]">Billy Darmadi</h1>
-                        <small>Customer The Art Of Fibonacci</small>
-                    </div>
-                </div>
-                <div>
-                    <p class="pt-6 lg:pt-0 text-semibold">
-                        So far untuk Fibonacci cukup akurat ya, karena saya sering pakai untuk cek kira-kira hidden support n resistannya di pasar saham Indonesia. Hasilnya 70-80% akurat sekali hehe jadi bisa dibilang udah balik modal untuk beli e-learningnya.
-                    </p>
-                </div>
+            <div class="slider-navigation flex justify-center mt-3">
+                <ul class="flex justify-center list-none p-0 mt-4">
+                    <li class="slider-progress-item w-4 h-4 rounded-full bg-gray-400 mx-2 cursor-pointer"></li>
+                    <li class="slider-progress-item w-4 h-4 rounded-full bg-gray-400 mx-2 cursor-pointer"></li>
+                    <li class="slider-progress-item w-4 h-4 rounded-full bg-gray-400 mx-2 cursor-pointer"></li>
+                </ul>
+              <button class="slider-prev px-4 py-2 bg-[#FFD540] rounded cursor-pointer opacity-40" disabled>
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="slider-next px-4 py-2 bg-[#FFD540] rounded cursor-pointer">
+                <i class="bi bi-chevron-right"></i>
+              </button>
             </div>
-        </div>
+          </div>
     </section>
 
     <!-- End of Section 7 -->
 
     <!-- Section 8 -->
 
-    <section class="bg-yellow-300">
-        <div class="flex justify-center">
-            <div class="w-9/12 lg:w-10/12 mx-auto flex p-9 lg:items-center">
+    <section class="bg-[#FFD145]">
+        <div class="flex justify-center p-4">
+            <div class="mx-auto flex text-sm lg:items-center">
                 <i class="bi bi-exclamation-triangle text-2xl lg:text-5xl mr-10"></i>
                 <p><span class="font-bold">Disclaimer</span>: Konten yang disampaikan dalam website ini bersifat informatif. PT. Astronacci International tidak menjanjikan keuntungan dalam nominal tertentu, keputusan dan risiko yang diambil oleh setiap trader merupakan tanggung jawab masing - masing. PT. Astronacci International menghimbau agar informasi yang disampaikan dalam website ini dapat digunakan sebagaimana mestinya. Kami tidak bertanggung jawab atas segala bentuk kerugian yang dihasilkan.</p>
             </div>
@@ -952,9 +728,9 @@
             <div class="flex flex-col justify-center items-center lg:w-1/3">
                 <img src="img/logo-AShop-putih.png" alt="">
                 <h1 class="font-bold pt-6 text-xl">CUSTOMER CARE</h1>
-                <small class="mt-2">Monday - Friday (9 AM - 6 PM)</small>
-                <small class="mt-2"><i class="bi bi-telephone"></i><span class="ml-6">+62 811-883-882</span></small>
-                <small class="mt-2"><i class="bi bi-envelope"></i><span class="ml-6">care@astronaccishop.com</span></small>
+                <small class="mt-2 text-sm">Monday - Friday (9 AM - 6 PM)</small>
+                <small class="mt-2 text-sm"><i class="bi bi-telephone"></i><span class="ml-6">+62 811-883-882</span></small>
+                <small class="mt-2 text-sm"><i class="bi bi-envelope"></i><span class="ml-6">care@astronaccishop.com</span></small>
                 <div class="social-media pt-12 hidden lg:block">
                     <ul class="flex gap-10">
                         <li>
@@ -976,16 +752,20 @@
                 </div>
             </div>
             <div class="mt-6 flex flex-col items-center lg:w-1/3">
-                <h1 class="block text-left text-2xl font-bold">Astronacci Mansion</h1>
-                <p class="text-center lg:text-left pb-5">Jl. Arteri Gading Blok E-1/9, <br> Kelapa Gading - North Jakarta 14250</p>
+                <h1 class="block text-left text-sm font-bold">Astronacci Mansion</h1>
+                <p class="text-center text-sm lg:text-left pb-5">Jl. Arteri Gading Blok E-1/9, <br> Kelapa Gading - North Jakarta 14250</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6785489878484!2d106.90941637145458!3d-6.17377394680148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698ad480f5d17d%3A0xcb1cc72571cd59a6!2sAstronacci%20International!5e0!3m2!1sid!2sid!4v1687764330990!5m2!1sid!2sid" width="300" height="150" class="rounded-lg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="pt-6 flex flex-col items-center lg:w-1/3">
                 <img src="img/kominfo.png" alt="" width="50">
-                <p class="w-6/12 text-center lg:text-left pt-4">Certified by Ministry of
+                <p class="lg:text-left text-sm pt-4 text-center hidden">Certified by Ministry of
                     Communications and Informatics of Indonesia
                     no. 001900.01/DJAI.PSE/01/2022
                     as Electronic System Provider</p>
+                <p class="lg:text-left text-sm pt-4 text-center">Certified by Ministry of
+                    <br>Communications and Informatics of Indonesia<br>
+                    no. 001900.01/DJAI.PSE/01/2022
+                    <br>as Electronic System Provider</p>
                 <div class="social-media pt-12 block lg:hidden">
                     <ul class="flex gap-10">
                         <li>
@@ -1007,7 +787,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-[#000000] text-white text-center py-6">
+        <div class="bg-[#000000] text-sm text-white text-center py-6">
             Copyright © 2023  Astronacci Shop  | All rights reserved.
         </div>
     </footer>
@@ -1016,34 +796,51 @@
 
     <!-- SplideJS -->
 
-    <script src="js/splide.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
 
     <!-- My Scripts -->
     <script>
-
-        var splide = new Splide('.splide', {
-            gap: 10,
-            type: 'loop',
-            lazyLoad: 'nearby',
-            autoplay: true,
-            perPage: 2,
-            rewind: true,
-        })
+        // SplideJS
+        
+        var splide = new Splide('#splide', {
+                gap: 10,
+                type: 'loop',
+                lazyLoad: 'nearby',
+                autoplay: true,
+                perPage: 2,
+                rewind: true,
+                grid: {
+                    dimensions: [[2,2], [2,2], [2,2]],
+                },
+                breakpoints: {
+                    640: {
+                        grid: {
+                            dimensions: [[2,2], [2,2], [2,2]]
+                        }
+                    }
+                }
+            })
 
         document.addEventListener( 'DOMContentLoaded', function () {
             splide.mount();
         });
 
         // Accordion
-        function accTrigger(accTrigger, accItem) {
-            const trigger = document.getElementById(accTrigger);
-            const item = document.getElementById(accItem);
+        var acc = document.getElementsByClassName("accordion");
+var i;
 
-            trigger.addEventListener('click', function() {
-                item.classList.toggle('hidden');
-            })
-        }
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+        }   
     </script>
 </body>
 
