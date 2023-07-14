@@ -32,7 +32,7 @@ Section 6
 Section 7
 
 1. Cari rekomendasi or template lain untuk carousel
-2. Tidak boleh menggunakan table, bisa menggunakan grid (Sudah)
+2. Tidak boleh menggunakan table, bisa menggunakan grid
 
 Section 8
 
