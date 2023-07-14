@@ -11,17 +11,17 @@ Section ke-2
 2. Transsisiton (Sudah)
 
 Section 3
-1. Banner sesuaikan ukuran figma (Sudah)
-2. Colom deskripsi sesuaikan (Sudah)
+1. Banner sesuaikan ukuran figma
+2. Colom deskripsi sesuaikan
 
 Section 4
-1. Video dan Deskripsi sesuaikan samakan figma (Sudah)
+1. Video dan Deskripsi sesuaikan samakan figma
 
 Section 5
-1. Sesuaikan ukuran difigma banner (Sudah)
-2. Title deskripsi samakan (Sudah)
+1. Sesuaikan ukuran difigma banner
+2. Title deskripsi samakan
 3. Sub title bukan center melaikan rata kiri
-4. Button bukan full colom, melaikan 50% (Sudah)
+4. Button bukan full colom, melaikan 50%
 
 Section 6
 
