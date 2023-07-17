@@ -13,12 +13,16 @@
 
     <!-- SplideJS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"/>
-    <link rel="stylesheet" href="css/splide-skyblue.min.css"/>
+    <link rel="stylesheet" href="css/splide-sea-green.min.css"/>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 
     <title>Project Landing Page</title>
     <style>
@@ -35,7 +39,6 @@
           background: url('img/image3.png');
           background-size: cover;
           background-origin: border-box;
-          background-attachment: fixed;
           background-blend-mode: multiply;
           background-repeat: no-repeat;
 
@@ -201,6 +204,27 @@
             /* flex-direction: column; */
         }
 
+        /* SwiperJS */
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            object-fit: cover;
+        }
+
         @media screen and (min-width: 1024px) {
             .container-grid {
                 flex-direction: column;
@@ -344,20 +368,20 @@
         <div id="banner" class="banner">
             <div class="xl:container xl:h-screen lg:h-screen">
                 <a href="#" class="block mx-auto w-fit lg:mx-16 pt-16">
-                    <img src="img/logo-AShop-putih.png" alt="" style="width: 100px;">
+                    <img src="img/logo-AShop-putih.png" alt="" style="width: 120px;">
                 </a>
-                <div class="px-7 lg:w-5/6 lg:ml-12 lg:mt-20 xl:pb-28 xl:mt-24 pt-9 2xl:mt-48 3xl:mt-12">
+                <div class="px-7 md:mt-20 lg:mt-32 lg:w-5/6 lg:ml-12 xl:pb-28 xl:mt-32 pt-9 2xl:mt-48">
                     <h1 class="text-xs w-60 py-1 border border-[#FFD540] rounded-full text-[#FFD540] text-center font-normal sm:text-sm md:w-7/12 md:text-lg lg:w-7/12 xl:w-fit xl:px-6">The Art Of Fibonacci Platinum Edition</h1>
-                    <p class="uppercase text-slate-50 pt-4 text-3xl font-bold md:text-6xl xl:text-7xl">RAHASIA ANALISIS MARKET MAKIN AKURAT</p>
+                    <p class="uppercase text-slate-50 pt-4 text-2xl font-bold md:text-6xl xl:text-7xl">RAHASIA ANALISIS MARKET MAKIN AKURAT</p>
                     <p class="text-slate-50 text-5xl pt-3 hidden xl:text-[4.3rem] xl:block">Hasil Jauh Lebih Optimal!</p>
-                    <p class="text-slate-50 text-2xl md:text-5xl pt-3 xl:hidden md:text-[3rem]">Hasil Jauh Lebih <br>Optimal!</p>
+                    <p class="text-slate-50 text-3xl md:text-5xl pt-3 xl:hidden md:text-[3rem]">Hasil Jauh Lebih <br>Optimal!</p>
                     <div class="flex flex-col md:gap-3 xl:flex-row md:flex-row md:items-center lg:p-0 space-x-0 xl:space-x-8 items-start xl:items-center mt-6">
                         <a href="#sec-3" type="button" class="banner-pelajari-btn block text-center bg-[#FFD540] rounded-lg hover:text-slate-50 hover:bg-[#DC3545] w-10/12 md:w-6/12 xl:py-[1rem] xl:px-[3.850rem] py-[1.5rem] transition-colors duration-150 lg:w-6/12 xl:w-[22rem]">Pelajari Selengkapnya</a>
                         <a href="#" class="video-link flex items-center text-slate-50 pt-5 md:pt-0 lg:pt-0 lg:pl-8 xl:pl-0 lg:flex-row">
                             <i class="bi bi-play text-slate-50 xl:text-4xl border-2 border-slate-50 rounded-full px-4 py-3 xl:px-3 xl:py-2 transition duration-150 text-2xl"></i><span class="ml-4">Tonton Cuplikan <br>e-learning disini</span>
                         </a>
                     </div>
-                    <div class="mt-44 md:mt-32 lg:flex lg:mt-20 xl:mt-28 lg:items-end xl:container xl:-ml-4 2xl:mt-40 3xl:mt-0">
+                    <div class="mt-[17rem] sm:mt-64 md:mt-36 lg:flex xl:mt-72 lg:items-end xl:container xl:-ml-4 2xl:mt-40 3xl:mt-0">
                         <div>
                             <h1 class="text-slate-50 text-base">Download A-Shop App Sekarang :</h1>
                             <div class="flex gap-2 xl:gap-7 banner-download">
@@ -378,7 +402,7 @@
 
     <!-- Section 1 -->
 
-    <section class="sec-1 relative flex flex-col items-center lg:h-screen">
+    <section class="sec-1 relative flex flex-col items-center">
         <div class="bg-sec-1 bg-cover bg-top absolute w-full h-[32rem] md:h-[38rem] lg:h-96 z-[-10]">
         </div>
         <h2 class="text-3xl text-center pt-28 text-zinc-100 lg:text-4xl font-bold hidden lg:block">Pernahkah Kamu Merasa..</h2>
@@ -437,15 +461,18 @@
 
     <!-- Section 2 -->
 
-    <section class="flex flex-col container relative justify-center items-center lg:justify-between lg:flex-row h-screen lg:p-14">
+    <section class="flex flex-col container relative justify-center items-center lg:justify-between lg:flex-row lg:p-14">
         <div class="pt-0 md:pt-36 lg:pt-0">
             <img class="block lg:w-[26rem] md:w-[28rem]" src="img/sec-2-img.png" alt="">
         </div>
-        <div class="container min-w-fit xl:w-[33rem] lg:w-[30rem] pt-12">
+        <div class="container min-w-fit lg:w-[40rem] pt-12">
             <h1 class="text-2xl md:text-3xl font-bold lg:block hidden relative">
-                Solusi Belajar Ilmu Astronacci <br>dengan Mudah
-                <img src="img/path30.png" alt="" class="absolute left-[6.5rem] hidden lg:block" style="width: 140px;">
-                <img src="img/path30.png" alt="" class="absolute top-8 right-5 hidden lg:block" style="width: 260px;">
+                Solusi Belajar <span class="relative">Ilmu Astronacci 
+                    <img src="img/path30.png" alt="" class="absolute hidden lg:block right-0" style="width: 260px;"></span><br>dengan 
+                <span class="relative">Mudah
+                    <img src="img/path30.png" alt="" class="absolute right-0 hidden lg:block" style="width: 140px;">
+                </span>
+
             </h1>
             <h1 class="text-3xl font-bold lg:hidden block relative">
                 Solusi Belajar Ilmu Astronacci dengan Mudah
@@ -499,46 +526,51 @@
 
     <!-- Section 4 -->
 
-    <section class="sec-4 container flex flex-col items-center lg:flex-row relative">
+    <section class="sec-4 container flex flex-col lg:flex-row relative py-24 gap-5">
         <div class="flex items-center justify-center lg:w-1/2">
-            <img src="img/MOCKUP FIBONACCI PLATIUM EDITION 2.png" alt="" class="block lg:w-[28rem]">
+            <img src="img/MOCKUP FIBONACCI PLATIUM EDITION 2.png" alt="" class="w-full">
         </div>
         <div class="lg:w-1/2 mt-4">
-            <h1 class="xl:text-5xl lg:text-3xl relative sec-4-title font-bold">Dapatkan ILMU LENGKAP Hanya dalam Satu E-learning!
-                <img src="img/path30.png" alt="" width="250" class="absolute top-[2rem] right-[6.3rem] hidden lg:block">
-                <img src="img/path30.png" alt="" width="230" class="absolute top-[4.5rem] right-[9.5rem] hidden lg:block">
+            <h1 class="xl:text-5xl lg:text-3xl relative sec-4-title font-bold">Dapatkan <span class="relative">
+                ILMU LENGKAP
+                <img src="img/path30.png" alt="" class="absolute right-0 hidden lg:block">
+            </span> Hanya dalam <span class="relative">Satu E-learning!
+                <img src="img/path30.png" alt="" class="absolute right-0 hidden lg:block">
+            </span>
             </h1>
-            <div class="my-2">
-                <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
-                    <img src="img/search1.png" alt="" class="block pl-4">
-                    <p class="text-left md:text-base">Teknik Mengungkap Support & Resistance Tersembunyi.</p>
-                    <i class="bi bi-chevron-down block pr-4"></i>
-                </button>
-                <div class="panel p-6 bg-[#bdbdbd40]">
-                    <p>Penerapan Fibonacci Retracement dapat membantumu menemukan titik Support & Resistance yang tak terlihat sekalipun.</p>
+            <div class="mt-12">
+                <div class="my-6">
+                    <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
+                        <img src="img/search1.png" alt="" class="block pl-4">
+                        <p class="text-[#494E54] text-left w-10/12 md:text-base lg:text-xl">Teknik Mengungkap <span class="font-bold">Support & Resistance</span> Tersembunyi.</p>
+                        <i class="bi bi-chevron-down block pr-4"></i>
+                    </button>
+                    <div class="panel p-6 bg-[#bdbdbd40] text-[#494E54]">
+                        <p class="px-12">Penerapan Fibonacci Retracement dapat membantumu menemukan titik Support & Resistance yang tak terlihat sekalipun.</p>
+                    </div>
+                </div>
+                <div class="my-6">
+                    <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
+                        <img src="img/analytics1.png" alt="" class="block pl-4">
+                        <p class="text-[#494E54] text-left w-10/12 md:text-base lg:text-xl">Metode Tepat Menentukan Titik <span class="font-bold">TP & SL</span> di <span class="font-bold">best area.</span></p>
+                        <i class="bi bi-chevron-down block pr-4"></i>
+                    </button>
+                    <div class="panel p-6 bg-[#bdbdbd40] text-[#494E54]">
+                        <p>Menentukan titik TP & SL secara akurat jadi lebih mudah menggunakan Fibonacci Retracement & Fibonacci Extension.</p>
+                    </div>
+                </div>
+                <div class="my-6">
+                    <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
+                        <img src="img/alarm-clock1.png" alt="" class="block pl-4">
+                        <p class="text-[#494E54] text-left w-10/12 md:text-base lg:text-xl"><span class="font-bold">BUY</span> di Harga Terendah & <span class="font-bold">SELL</span> di Harga Tertinggi.</p>
+                        <i class="bi bi-chevron-down block pr-4"></i>
+                    </button>
+                    <div class="panel p-6 bg-[#bdbdbd40] text-[#494E54]">
+                        <p>Fibonacci & Time Trading wajib kamu terapkan untuk bisa konfirmasi harga serta waktu yang tepat saat ambil keputusan di market.</p>
+                    </div>
                 </div>
             </div>
-            <div class="my-2">
-                <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
-                    <img src="img/analytics1.png" alt="" class="block pl-4">
-                    <p class="text-left md:text-base">Metode Tepat Menentukan Titik TP & SL di best area.</p>
-                    <i class="bi bi-chevron-down block pr-4"></i>
-                </button>
-                <div class="panel p-6 bg-[#bdbdbd40]">
-                    <p>Menentukan titik TP & SL secara akurat jadi lebih mudah menggunakan Fibonacci Retracement & Fibonacci Extension.</p>
-                </div>
-            </div>
-            <div class="my-2">
-                <button class="accordion flex justify-between gap-3 text-sm items-center bg-[#bdbdbd40] min-w-full py-5 rounded-lg hover:bg-yellow-300 active:bg-yellow-300 visited:bg-yellow-500 transition-all">
-                    <img src="img/alarm-clock1.png" alt="" class="block pl-4">
-                    <p class="text-left md:text-base">BUY di Harga Terendah & SELL di Harga Tertinggi.</p>
-                    <i class="bi bi-chevron-down block pr-4"></i>
-                </button>
-                <div class="panel p-6 bg-[#bdbdbd40]">
-                    <p>Fibonacci & Time Trading wajib kamu terapkan untuk bisa konfirmasi harga serta waktu yang tepat saat ambil keputusan di market.</p>
-                </div>
-            </div>
-                <button type="button" class="bg-[#FFD540] font-bold text-lg px-6 py-4 w-full rounded-full hover:bg-merah hover:text-zinc-100 hover:ring-4 hover:ring-yellow-300 transition-all lg:w-1/2 lg:text-base">Saya Tertarik Belajar</button>
+                <button type="button" class="bg-[#FFD540] text-xl px-6 py-6 w-full rounded-full hover:bg-merah hover:text-zinc-100 hover:ring-4 hover:ring-yellow-300 transition-all lg:w-1/2 lg:text-xl">Saya Tertarik Belajar</button>
             </div>
         </div>
     </section>
@@ -547,7 +579,7 @@
 
     <!-- Section 5 -->
 
-    <section class="container px-4 py-8 mb-8 overflow-hidden md:scale-[.9] lg:px-0 xl:mb-5 xl:mt-12 xl:pt-0 lg:scale-90 xl:scale-100">      
+    <section class="container px-4 py-24 mb-8 overflow-hidden md:scale-[.9] lg:px-0 xl:mb-5 xl:mt-12 xl:pt-0 lg:scale-90 xl:scale-100">      
         <div class="bg-[#FFD540] rounded-2xl overflow-hidden relative flex flex-col lg:flex-row gap-6 lg:h-4/6 xl:h-[28.5rem]">
             <div class="lg:w-6/12 lg:relative flex items-center px-8 py-20">
                 <div>
@@ -559,9 +591,9 @@
                 </div>
             </div>
             <div>
-                <div class="">
-                    <img src="img/image57.png" alt="" class="hidden h-full lg:block lg:absolute lg:top-0">
-                    <img src="img/image57-mobile.png" class="block lg:hidden" alt="" style="width: 100%; margin-bottom: -1rem;">
+                <div class="h-full">
+                    <img src="img/image57.png" alt="" class="hidden h-full lg:block lg:h-full lg:w-full lg:-mr-1">
+                    <img src="img/image57-mobile.png" class="block w-full mt-3 lg:hidden" alt="">
                 </div>
             </div>
         </div>
@@ -572,31 +604,31 @@
     <!-- Section 6 -->
 
     <section class="sec-6 bg-zinc-900 w-full pt-7 pb-12">
-        <div class="splide w-10/12 rounded-[.7rem] mx-auto mt-20" role="group" id="splide">
-            <div class="splide__track">
-                <ul class="splide__list rounded-xl">
+        <div class="splide w-10/12 mx-auto mt-20 px-6" role="group" id="splide">
+            <div class="splide__track rounded-[0.7rem]">
+                <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="img/stats1-1.png"></img>
+                        <img src="img/stats1-1.png" class="rounded-[0.7rem]"></img>
                     </li>
                     <li class="splide__slide">
-                        <img src="img/stats1-2.png"></img>
+                        <img src="img/stats1-2.png" class="rounded-[0.7rem]"></img>
                     </li>
                     <li class="splide__slide">
-                        <img src="img/stats2-1.png"></img>
+                        <img src="img/stats2-1.png" class="rounded-[0.7rem]"></img>
                     </li>
                     <li class="splide__slide">
-                        <img src="img/stats2-2.png"></img>
+                        <img src="img/stats2-2.png" class="rounded-[0.7rem]"></img>
                     </li>
                     <li class="splide__slide">
-                        <img src="img/stats3-1.png"></img>
+                        <img src="img/stats3-1.png" class="rounded-[0.7rem]"></img>
                     </li>
                     <li class="splide__slide">
-                        <img src="img/stats3-2.png"></img>
+                        <img src="img/stats3-2.png" class="rounded-[0.7rem]"></img>
                     </li>
                 </ul>
             </div>
         </div>
-        <small class="sec-6-sm-text text-white text-center mt-[-3rem] mb-12 hidden lg:block xl:pt-20"><i class="font-bold">*Disclaimer On</i>: Analisis ini tidak merujuk kamu untuk melakukan transaksi jual dan beli di market terkait</small>
+        <small class="text-white text-center mt-[-3rem] mb-12 hidden md:block md:mt-9 xl:mt-2"><i class="font-bold">*Disclaimer On</i>: Analisis ini tidak merujuk kamu untuk melakukan transaksi jual dan beli di market terkait</small>
         <div class="sec-6-btn-wrapper w-full text-center">
             <button type="button" class="sec-6-btn bg-[#FFD540] mt-6 py-6 md:px-24 rounded-full hover:text-slate-50 hover:bg-[#DC3545] focus:ring focus:ring-red-900 transition-colors duration-150">Ingin Belajar Lebih Lanjut</button>
         </div>
@@ -656,51 +688,41 @@
 
     <!-- Section 7 -->
 
-    <section class="py-8 bg-[#F9FAFB]">
-        <div class="slider overflow-hidden bg-[#FFF]">
-            <div class="slider-wrapper flex transition-transform duration-500 ease-in-out">
-              <div class="slide flex-shrink-0 w-full flex-col">
-                <div class="reviewer flex items-center p-5">
-                  <img src="reviewer1.jpg" alt="Reviewer 1" class="reviewer-image w-12 h-12 rounded-full mr-3">
-                  <div class="reviewer-info flex-1">
-                    <h3 class="reviewer-name text-xl mb-1">John Doe</h3>
-                    <p class="reviewer-message text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum aliquam augue ut pulvinar.</p>
+    <section class="py-8 bg-[#F9FAFB] flex flex-col items-center">
+        <div class="w-5/6">asdfasdf</div>
+        <div class="w-5/6">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="p-5">
+                        <img src="img/reviewer1.png" alt="" class="w-20 h-20">
+                        <h1 class="text-left">Billy Darmadi</h1>
+                        <small class="text-[#494E54] text-left block">Customer The Art of Fibonacci</small>
+                        <p class="text-left">
+                            So far untuk Fibonacci cukup akurat ya, karena saya sering pakai untuk cek kira-kira hidden support n resistannya di pasar saham Indonesia. Hasilnya 70-80% akurat sekali hehe jadi bisa dibilang udah balik modal untuk beli e-learningnya.
+                        </p>
+                    </div>
                   </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
                 </div>
-              </div>
-              <div class="slide flex-shrink-0 w-full">
-                <div class="reviewer flex items-center p-5">
-                  <img src="reviewer2.jpg" alt="Reviewer 2" class="reviewer-image w-12 h-12 rounded-full mr-3">
-                  <div class="reviewer-info flex-1">
-                    <h3 class="reviewer-name text-xl mb-1">Jane Smith</h3>
-                    <p class="reviewer-message text-sm text-gray-600">Vestibulum feugiat gravida malesuada. Curabitur pulvinar massa sed lacus vestibulum, sit amet faucibus metus interdum.</p>
-                  </div>
+                <div class="flex">
+                    <div class="pt-12">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-              </div>
-              <div class="slide flex-shrink-0 w-full">
-                <div class="reviewer flex items-center p-5">
-                  <img src="reviewer3.jpg" alt="Reviewer 3" class="reviewer-image w-12 h-12 rounded-full mr-3">
-                  <div class="reviewer-info flex-1">
-                    <h3 class="reviewer-name text-xl mb-1">Mike Johnson</h3>
-                    <p class="reviewer-message text-sm text-gray-600">Fusce tempor tortor ut arcu mattis, a fringilla nisi iaculis. Nunc cursus turpis ac ex ullamcorper laoreet.</p>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="slider-navigation flex justify-center mt-3">
-                <ul class="flex justify-center list-none p-0 mt-4">
-                    <li class="slider-progress-item w-4 h-4 rounded-full bg-gray-400 mx-2 cursor-pointer"></li>
-                    <li class="slider-progress-item w-4 h-4 rounded-full bg-gray-400 mx-2 cursor-pointer"></li>
-                    <li class="slider-progress-item w-4 h-4 rounded-full bg-gray-400 mx-2 cursor-pointer"></li>
-                </ul>
-              <button class="slider-prev px-4 py-2 bg-[#FFD540] rounded cursor-pointer opacity-40" disabled>
-                <i class="bi bi-chevron-left"></i>
-              </button>
-              <button class="slider-next px-4 py-2 bg-[#FFD540] rounded cursor-pointer">
-                <i class="bi bi-chevron-right"></i>
-              </button>
-            </div>
-          </div>
+        </div>
     </section>
 
     <!-- End of Section 7 -->
@@ -796,6 +818,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-grid@0.4.1/dist/js/splide-extension-grid.min.js"></script>
 
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <!-- My Scripts -->
     <script>
         // SplideJS
@@ -808,24 +834,29 @@
                 perPage: 2,
                 rewind: true,
                 grid: {
-                    dimensions: [[2,2], [2,2], [2,2]],
+                    rows: 3,
+                    cols: 3,
                 },
                 breakpoints: {
-                    640: {
-                        grid: {
-                            dimensions: [[2,2], [2,2], [2,2]]
-                        }
-                    }
-                }
+                        800: {
+                            grid: {
+                                rows: 2,
+                                cols: 2,
+                            },
+                        },
+                        600: {
+                            grid: false,
+                        },
+                },
             })
 
         document.addEventListener( 'DOMContentLoaded', function () {
-            splide.mount();
+            splide.mount(window.splide.Extensions);
         });
 
         // Accordion
         var acc = document.getElementsByClassName("accordion");
-var i;
+        var i;
 
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function() {
@@ -838,6 +869,20 @@ var i;
                 }
             });
         }   
+
+        // SwiperJS
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
     </script>
 </body>
 
