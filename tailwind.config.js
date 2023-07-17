@@ -18,10 +18,6 @@ module.exports = {
         'hitam' : '#191C21',
         'merah' : '#DC3545'
       },
-
-      screens : {
-        '3xl' : '2560px',
-      }
     },
   },
   plugins: [],
