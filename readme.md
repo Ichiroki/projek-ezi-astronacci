@@ -6,38 +6,39 @@ Section Header:
 5. Link anchor (Sudah)
 6. Rotasi background image ketika user menggunakan device mobile (Sudah)
 
-Section ke-2
+Section 1
 1. Ukuran Font sesuaikan & Bold (Sudah)
 2. Transsisiton (Sudah)
 
-Section 3
+Section 2
 1. Banner sesuaikan ukuran figma
 2. Colom deskripsi sesuaikan
 
-Section 4
-1. Video dan Deskripsi sesuaikan samakan figma
+Section 3
+1. Video dan Deskripsi sesuaikan samakan figma (Sudah)
 
-Section 5
+Section 4
 1. Sesuaikan ukuran difigma banner
 2. Title deskripsi samakan
 3. Sub title bukan center melaikan rata kiri
 4. Button bukan full colom, melaikan 50%
 
-Section 6
+Section 5
 
 1. Style banner sesuaikan
 2. Rounded banckgroud
 3. Title Header & deskripsi sesuai ukuran
 4. 
-Section 7
+Section 6
 
 1. Cari rekomendasi or template lain untuk carousel
 2. Tidak boleh menggunakan table, bisa menggunakan grid
 
-Section 8
+Section 7
 
 1. Carousel belum ada
 2. sesuaikan kembali layout figma
+
 Footer
 
 1. Logo kominfo dan deskripsi rata kiri
