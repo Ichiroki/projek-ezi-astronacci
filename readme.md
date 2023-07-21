@@ -10,11 +10,11 @@ Section ke-2
 2. Transsisiton (Sudah)
 
 Section 3
-1. Banner sesuaikan ukuran figma
-2. Colom deskripsi sesuaikan 
+1. Banner sesuaikan ukuran figma (sudah)
+2. Colom deskripsi sesuaikan (sudah)
 
 Section 4
-1. Video dan Deskripsi sesuaikan samakan figma 
+1. Video dan Deskripsi sesuaikan samakan figma
 
 Section 5
 1. Sesuaikan ukuran difigma banner 
@@ -36,5 +36,5 @@ Section 8
 2. sesuaikan kembali layout figma
 
 Footer
-1. Logo kominfo dan deskripsi rata kiri
-2. padding atau margin top untuk sosmed
+1. Logo kominfo dan deskripsi rata kiri (Sudah)
+2. padding atau margin top untuk sosmed (Sudah)
