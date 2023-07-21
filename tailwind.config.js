@@ -8,7 +8,7 @@ module.exports = {
         DEFAULT: '1.05rem',
         md: '2rem',
         lg: '4rem',
-    },
+      },
     },
     extend: {
       colors: {
