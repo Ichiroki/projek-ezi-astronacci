@@ -24,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [{cssnano: {}}],
+  plugins: ['cssnano', 'purgecss'],
 }
